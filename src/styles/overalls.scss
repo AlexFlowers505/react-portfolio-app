@@ -1,0 +1,22 @@
+// // // TOOLKIT
+// // vars
+// colors
+$clr-whitish: rgba(255, 255, 255, 1);
+$clr-blackish: rgba(0, 0, 0, 1);
+// transitions
+$transition-basic: .2s ease all;
+// // mixins
+
+// // // STYLES
+
+// // overalls
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    cursor: pointer;
+    transition: $transition-basic;
+}
