@@ -1,7 +1,32 @@
-import React from 'react'
+// ➔ ➔ ➔ IMPORTS
 
+// ➔ ➔ modules
+  import React from 'react'
+
+// ➔ ➔ components
+  import Header from '../section-like/header/Header'
+  import About from '../section-like/about/About'
+  import Contacts from '../section-like/contacts/Contacts'
+  import Nav from '../section-like/nav/Nav'
+  import Portfolio from '../section-like/portfolio/Portfolio'
+  import Services from '../section-like/services/Services'
+  import Testimonials from '../section-like/testimonials/Testimonials'
+  import Xp from '../section-like/xp/Xp'
+  import Footer from '../section-like/footer/Footer'
+
+// ➔ ➔ ➔ CODE
 export default function App() {
   return (
-    <div>App</div>
+    <>
+      <Header />
+      <Nav />
+      <About />
+      <Xp />
+      <Services />
+      <Portfolio />
+      <Testimonials />
+      <Contacts />
+      <Footer />
+    </>
   )
 }

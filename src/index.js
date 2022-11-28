@@ -1,10 +1,14 @@
-// // // IMPORTS
-// // modules
-import ReactDOM from 'react-dom'
-// // styles
-import './styles/overalls.scss'
-// // components
-import App from './scripts/components/App/App'
+// • • • IMPORTS
 
-// CODE
-ReactDOM.render(<App/>, document.querySelector('#root'))
+// • • modules
+import ReactDOM from 'react-dom/client'
+
+// • • styles
+import './styles/overalls.scss'
+
+// • • components
+import App from './scripts/components/app/App'
+
+
+// • • • CODE
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>)

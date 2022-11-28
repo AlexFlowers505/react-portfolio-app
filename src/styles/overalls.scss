@@ -1,22 +1,44 @@
-// // // TOOLKIT
-// // vars
-// colors
-$clr-whitish: rgba(255, 255, 255, 1);
-$clr-blackish: rgba(0, 0, 0, 1);
-// transitions
-$transition-basic: .2s ease all;
-// // mixins
+@import './toolkit';
 
-// // // STYLES
 
-// // overalls
+/* ============================================================== OVERALLS ============================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     text-decoration: none;
     list-style: none;
     outline: none;
-    cursor: pointer;
+    cursor: default;
     transition: $transition-basic;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: $clr-whitish;
+    line-height: 1.7;
 }
+html {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+body {
+    background-color: $clr-bg-basic;
+}
+@each $heading in $headings {
+    #{$heading} {
+        font-weight: 500;
+    }
+}
+h1 {
+    font-size: 2.5rem;
+}
+section {
+    margin-top: 8rem;
+}
+
+/* ============================================================== SPECIFICS ============================================================== */
+ .tank {
+    @include tank_responsive_width;
+    margin: 0 auto;
+ }
