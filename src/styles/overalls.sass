@@ -1,0 +1,83 @@
+@import './toolkit'
+
+
+/* ============================================================== OVERALLS ============================================================== */
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+    text-decoration: none
+    list-style: none
+    outline: none
+    cursor: default
+    transition: $transition-basic
+
+    font-family: 'Poppins', sans-serif
+    font-weight: 300
+    color: $clr-whitish
+    line-height: 1.7
+html 
+    scroll-behavior: smooth
+    overflow-y: hidden
+body 
+    background-color: $clr-bg-basic
+@each $heading in $headings 
+    #{$heading}
+        font-weight: 500
+h1
+    font-size: 2.5rem
+section 
+    margin-top: 8rem
+section > h2, 
+section > h5 
+    text-align: center
+    color: $clr-whitish--glassy
+section > h2 
+    color: $clr-primary
+    margin-bottom: 3rem
+img
+    display: block
+    width: 100%
+    object-fit: cover
+a 
+    & 
+        color: $clr-primary
+    +hocus 
+        color: $clr-whitish
+
+/* ============================================================== SPECIFICS ============================================================== */
+.tank 
+    +tank_responsive_width
+    margin: 0 auto
+.txt-light 
+    color: $clr-whitish--glassy
+.btn
+    &
+        &
+            width: max-content
+            display: inline-block
+            color: $clr-primary
+            padding: .75rem 1.2rem
+            border-radius: .4rem
+            cursor: pointer
+            border: 1px solid $clr-primary
+        +hocus
+            background-color: $clr-whitish
+            color: $clr-bg-basic
+            border-color: transparent
+    &-primary
+        background-color: $clr-primary
+        color: $clr-bg-basic
+
+/* ============================================================== RESPONSIVENESS ============================================================== */
+
+/* =============================== Tablets =============================== */
++media($bp-tablet)
+    section
+        margin-top: 6rem
+        
+/* =============================== Mobile =============================== */
++media($bp-tablet)
+    section > h2
+        margin-bottom: 2rem
