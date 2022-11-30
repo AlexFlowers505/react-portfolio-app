@@ -1,10 +1,8 @@
 /* ============================================================== IMPORTS ============================================================== */
-
 /* =============================== Modules =============================== */
 import React from 'react'
 
 /* =============================== Components =============================== */
-
 /* ============== icons ============== */
 import { BsTelegram as TelegramIcon, BsGithub as GithubIcon } from 'react-icons/bs'
 import { IoLogoBehance as BehanceIcon } from 'react-icons/io5'

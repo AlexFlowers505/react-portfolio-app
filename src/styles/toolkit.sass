@@ -1,10 +1,10 @@
 
 /* ============================================================== FONTS ============================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300500600&display=swap')
+/* =============================== 'Poppins' =============================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300500600&display=swap') 
 
 
 /* ============================================================== VARS ============================================================== */
-
 /* =============================== Colors =============================== */
 $clr-blackish: rgb(0, 0, 0)
 $clr-whitish: rgb(255, 255, 255)
@@ -15,6 +15,8 @@ $clr-bg-extra: rgb(44, 44, 108)
 
 $clr-primary: rgb(77, 181, 255)
 $clr-primary-glassy: rgba($clr-primary, .4)
+
+$gradient-primary: linear-gradient($clr-primary, transparent)
 
 /* =============================== Transitions =============================== */
 $transition-basic: .4s ease all
@@ -32,7 +34,6 @@ $bp-mobile: 600px
 $headings: h1, h2, h3, h4, h5, h6
 
 /* ============================================================== MIXINS ============================================================== */
-
 /* =============================== Helpers =============================== */
 =hocus 
     &:hover, &:focus 
@@ -42,10 +43,15 @@ $headings: h1, h2, h3, h4, h5, h6
         @content
 
 /* =============================== Styling =============================== */
-=tank_responsive_width() 
+=tank_responsive_width()
     &
         width: $w-lg-tank
     +media($bp-tablet)
         width: $w-md-tank
     +media($bp-mobile)
         width: $w-sm-tank
+=hocusClrSwitch($clr-unhocused, $clr-hocused)
+    &
+        color: $clr-unhocused
+    +hocus
+        color: $clr-hocused

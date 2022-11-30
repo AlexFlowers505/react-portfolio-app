@@ -16,7 +16,6 @@
 
     font-family: 'Poppins', sans-serif
     font-weight: 300
-    color: $clr-whitish
     line-height: 1.7
 html
     &
@@ -33,6 +32,7 @@ body
 @each $heading in $headings 
     #{$heading}
         font-weight: 500
+        color: $clr-whitish
 h1
     font-size: 2.5rem
 section 
@@ -48,13 +48,15 @@ img
     display: block
     width: 100%
     object-fit: cover
-a 
+a
     & 
         color: $clr-primary
     +hocus 
         color: $clr-whitish
 
 /* ============================================================== SPECIFICS ============================================================== */
+
+/* =============================== Distinct =============================== */
 .tank 
     +tank_responsive_width
     margin: 0 auto
@@ -77,15 +79,83 @@ a
     &-primary
         background-color: $clr-primary
         color: $clr-bg-basic
+.cta-btns
+    margin-top: 2.5rem
+    display: flex
+    gap: 2.3rem
+    justify-content: center
+.scroll-down-btn
+    position: absolute
+    right: -2.3rem
+    bottom: 5rem
+    transform: rotate(90deg)
+    font-weight: 300
+    font-size: .9rem
+
+/* =============================== Relative =============================== */
+.header
+    &
+        height: 100vh
+        padding-top: 7rem
+        overflow: hidden
+    &__tank
+        text-align: center
+        height: 100%
+        position: relative
+    &__socials
+        &
+            &
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: .8rem
+                position: absolute
+                left: 0
+                bottom: 3rem
+            &::after
+                content: ''
+                width: 1px
+                height: 2rem
+                background-color: $clr-primary
+        svg
+            +hocusClrSwitch($clr-primary, $clr-whitish)
+.photo-block
+    width: 22rem
+    height: 30rem
+    position: absolute
+    left: calc(50% - 11rem)
+    overflow: hidden
+    margin-top: 4rem
+    padding: 1.5rem
+    padding-top: 5rem
+    border-radius: 12rem 12rem 0 0
+    background: $gradient-primary
 
 /* ============================================================== RESPONSIVENESS ============================================================== */
 
 /* =============================== Tablets =============================== */
 +media($bp-tablet)
+    /* ============== Overalls ============== */
     section
         margin-top: 6rem
-
+    header
+        height: 68vh
+    /* ============== Specifics ============== */
+    /* ======= Distinct ======= */
+    .scroll-down-btn
+        display: none
+    /* ======= Relative ======= */
+    .header
+        &__socials
+            display: none
 /* =============================== Mobile =============================== */
 +media($bp-tablet)
+    /* ============== Overalls ============== */
     section > h2
         margin-bottom: 2rem
+    header
+        height: 100vh
+    /* ============== Specifics ============== */
+    /* ======= Distinct ======= */
+    /* ======= Relative ======= */
+
