@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Testimonials() {
   return (
-    <div>Testimonials</div>
+    <section id="testimonials-section">Testimonials</section>
   )
 }

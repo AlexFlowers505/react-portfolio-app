@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Xp() {
   return (
-    <div>Xp</div>
+    <section id='xp-section'>Experience</section>
   )
 }

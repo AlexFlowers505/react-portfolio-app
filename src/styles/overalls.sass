@@ -35,8 +35,9 @@ body
         color: $clr-whitish
 h1
     font-size: 2.5rem
-section 
+section
     margin-top: 8rem
+    height: 100vh
 section > h2, 
 section > h5 
     text-align: center
@@ -51,9 +52,11 @@ img
 a
     & 
         color: $clr-primary
+        cursor: pointer
     +hocus 
         color: $clr-whitish
-
+    *
+        cursor: pointer
 /* ============================================================== SPECIFICS ============================================================== */
 
 /* =============================== Distinct =============================== */
@@ -123,23 +126,45 @@ a
     width: 22rem
     height: 30rem
     position: absolute
-    left: calc(50% - 11rem)
+    +nonStaticHcentering(11rem)
     overflow: hidden
     margin-top: 4rem
     padding: 1.5rem
     padding-top: 5rem
     border-radius: 12rem 12rem 0 0
     background: $gradient-primary
-
+nav
+    background-color: $clr-blackish--glassy
+    width: max-content
+    display: block
+    padding: 0.7rem 1.7rem
+    z-index: 2
+    position: fixed
+    +nonStaticHcentering(5.8rem)
+    bottom: 2rem
+    display: flex
+    gap: 0.8rem
+    border-radius: 3rem
+    backdrop-filter: blur(15px)
 /* ============================================================== RESPONSIVENESS ============================================================== */
 
 /* =============================== Tablets =============================== */
 +media($bp-tablet)
     /* ============== Overalls ============== */
-    section
-        margin-top: 6rem
     header
         height: 68vh
+    /* ============== Specifics ============== */
+    /* ======= Distinct ======= */
+
+    /* ======= Relative ======= */
+
+/* =============================== Mobile =============================== */
++media($bp-mobile)
+    /* ============== Overalls ============== */
+    section > h2
+        margin-bottom: 2rem
+    header
+        height: 100vh
     /* ============== Specifics ============== */
     /* ======= Distinct ======= */
     .scroll-down-btn
@@ -148,14 +173,3 @@ a
     .header
         &__socials
             display: none
-/* =============================== Mobile =============================== */
-+media($bp-tablet)
-    /* ============== Overalls ============== */
-    section > h2
-        margin-bottom: 2rem
-    header
-        height: 100vh
-    /* ============== Specifics ============== */
-    /* ======= Distinct ======= */
-    /* ======= Relative ======= */
-

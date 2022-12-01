@@ -1,12 +1,13 @@
 
 /* ============================================================== FONTS ============================================================== */
 /* =============================== 'Poppins' =============================== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300500600&display=swap') 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap')
 
 
 /* ============================================================== VARS ============================================================== */
 /* =============================== Colors =============================== */
 $clr-blackish: rgb(0, 0, 0)
+$clr-blackish--glassy: rgba($clr-blackish, .3)
 $clr-whitish: rgb(255, 255, 255)
 $clr-whitish--glassy: rgba($clr-whitish, .6)
 
@@ -55,3 +56,5 @@ $headings: h1, h2, h3, h4, h5, h6
         color: $clr-unhocused
     +hocus
         color: $clr-hocused
+=nonStaticHcentering($subtrahend)
+    left: calc(50% - #{$subtrahend})
