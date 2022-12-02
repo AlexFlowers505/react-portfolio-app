@@ -133,19 +133,33 @@ a
     padding-top: 5rem
     border-radius: 12rem 12rem 0 0
     background: $gradient-primary
-nav
-    background-color: $clr-blackish--glassy
-    width: max-content
-    display: block
-    padding: 0.7rem 1.7rem
-    z-index: 2
-    position: fixed
-    +nonStaticHcentering(5.8rem)
-    bottom: 2rem
-    display: flex
-    gap: 0.8rem
-    border-radius: 3rem
-    backdrop-filter: blur(15px)
+.main-nav
+    &
+        background-color: $clr-blackish--glassy
+        width: max-content
+        display: block
+        padding: 0.7rem 1.7rem
+        z-index: 2
+        position: fixed
+        +nonStaticHcentering(5.8rem)
+        bottom: 2rem
+        display: flex
+        gap: 0.8rem
+        border-radius: 3rem
+        backdrop-filter: blur(15px)
+    &__item
+        &
+            background-color: transparent
+            padding: .9rem
+            display: flex
+            border-radius: 50%
+            color: $clr-whitish--glassy
+            font-size: 1.1rem
+        +hocus
+            background-color: $clr-blackish--glassy
+        &:active
+            background-color: $clr-bg-basic
+            color: $clr-whitish
 /* ============================================================== RESPONSIVENESS ============================================================== */
 
 /* =============================== Tablets =============================== */

@@ -1,6 +1,8 @@
 /* ============================================================== IMPORTS ============================================================== */
 /* =============================== Modules =============================== */
 import React from 'react'
+/* =============================== Hooks =============================== */
+import { useState } from 'react'
 /* =============================== Components =============================== */
 /* ============== icons ============== */
 import { AiOutlineHome as HomeIcon, AiOutlineUser as UserIcon } from 'react-icons/ai'
@@ -8,9 +10,10 @@ import { BiBook as BookIcon, BiMessageSquareDetail as ChatIcon } from 'react-ico
 import { RiServiceLine as HeartShakeIcon } from 'react-icons/ri'
 
 export default function Nav() {
+  const [activeItem, setActiveItem] = useState('#')
   return (
     <nav className='main-nav'>
-      <a className='main-nav__item' href='#'><HomeIcon /></a>
+      <a className={`main-nav__item ${activeItem === '#' ? 'main-nav__item--active' : ''}`} href='#'><HomeIcon /></a>
       <a className='main-nav__item' href='#about-section'><BookIcon /></a>
       <a className='main-nav__item' href='#xp-section'><UserIcon /></a>
       <a className='main-nav__item' href='#services-section'><HeartShakeIcon /></a>
