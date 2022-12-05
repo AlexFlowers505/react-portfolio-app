@@ -94,7 +94,18 @@ a
     transform: rotate(90deg)
     font-weight: 300
     font-size: .9rem
-
+.photo-block
+    width: 22rem
+    height: 30rem
+    position: absolute
+    +nonStaticHcentering(11rem)
+    overflow: hidden
+    margin-top: 4rem
+    padding: 1.5rem
+    padding-top: 5rem
+    border-radius: 12rem 12rem 0 0
+    background: $gradient-primary
+    
 /* =============================== Relative =============================== */
 /* ============== section-realative ============== */
 /* ============== section-realative ============== */
@@ -124,17 +135,6 @@ a
                 background-color: $clr-primary
         svg
             +hocusClrSwitch($clr-primary, $clr-whitish)
-.photo-block
-    width: 22rem
-    height: 30rem
-    position: absolute
-    +nonStaticHcentering(11rem)
-    overflow: hidden
-    margin-top: 4rem
-    padding: 1.5rem
-    padding-top: 5rem
-    border-radius: 12rem 12rem 0 0
-    background: $gradient-primary
 .main-nav
     &
         background-color: $clr-blackish--glassy
@@ -162,6 +162,26 @@ a
         &--active
             background-color: $clr-whitish--glassier
             color: $clr-whitish
+.about-section
+    &
+    &__contents-wrapper
+        display: grid
+        grid-template-columns: 35% 50%
+        gap: 15%
+    &__img-outer-wrapper
+        width: 100%
+        aspect-ratio: 1/1
+        border-radius: 2rem
+        background: linear-gradient(45deg, transparent, $clr-primary, transparent)
+        display: grid
+        place-items: center
+    &__img-inner-wrapper
+        &
+            border-radius: 2rem
+            overflow: hidden
+            transform: rotate(0deg)
+        +hocus 
+            transform: rotate(10deg)
 /* ============================================================== RESPONSIVENESS ============================================================== */
 
 /* =============================== Tablets =============================== */
