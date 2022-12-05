@@ -246,6 +246,24 @@ a
                     margin-top: 6px
                     color: $clr-primary
 
+.services__container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 3rem
+.service
+    &
+        background-color: $clr-bg-extra
+        border-radius: 0 0 2rem 2rem
+        border: 1px solid $clr-primary
+        height: fit-content
+    +hocus
+        background-color: transparent
+        border-color: $clr-primary-glassy
+.service__head
+    background-color: $clr-primary
+    padding: 2rem
+    border-radius: 0 0 2rem 2rem
+    box-shadow: $shadow-dark-slight
 /* ============================================================== RESPONSIVENESS ============================================================== */
 
 /* =============================== Tablets =============================== */
