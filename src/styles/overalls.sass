@@ -37,7 +37,6 @@ h1
     font-size: 2.5rem
 section
     margin-top: 8rem
-    height: 100vh
 section > h2, 
 section > h5 
     text-align: center
@@ -215,6 +214,33 @@ a
         &__about-desc
             margin: 2rem 0px 2.6rem
             color: $clr-whitish--glassy
+.experience__container
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 2rem
+.experience__container > article
+    background-color: $clr-bg-extra
+    padding: 2.4rem 5rem
+    border-radius: 2rem
+    border: 1px solid transparent
+.experience__container > article:hover
+        background: transparent
+        border-color: $clr-primary-glassy
+.experience__container > div h3
+    text-align: center
+    margin-bottom: 2rem
+    color: $clr-primary
+.experience__content
+    display: grid
+    grid-template-columns: 1fr 1fr
+    row-gap: 2rem
+.experience__details
+    display: flex
+    gap: 1rem
+.xp-item__icon
+    margin-top: 6px
+    color: $clr-primary
+
 
 /* ============================================================== RESPONSIVENESS ============================================================== */
 
@@ -237,6 +263,14 @@ a
         .text-content
             &__about-desc
                 margin: 1rem 0 1.5rem
+    .experience__container
+        grid-template-columns: 1fr
+    .experience__container > div
+        width: 80%
+        padding: 2rem
+        margin: 0 auto
+    .experience__content
+        padding: 1rem
 /* =============================== Mobile =============================== */
 +media($bp-mobile)
     /* ============== Overalls ============== */
@@ -264,4 +298,8 @@ a
             &__cards
                 grid-template-columns: 1fr 1fr
                 gap: 1rem
-        
+    .experience__container
+        gap: 1rem
+    .experience__container > article
+        width: 100%
+        padding: 2rem 1rem
