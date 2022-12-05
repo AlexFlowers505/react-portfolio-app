@@ -8,7 +8,7 @@ export default function Xp() {
 			<h5>What skills I have</h5>
 			<h2>My Experience</h2>
 			<div className='tank xp-section__contents-wrapper'>
-				<article className='xp-section__xp-cardxp-card'>
+				<article className='xp-section__xp-card xp-card'>
 					<h3 className='xp-card__heading'>Frontend Development</h3>
 					<div className='xp-card__contents'>
 						<div className='xp-card__xp-item xp-item'>
@@ -55,7 +55,7 @@ export default function Xp() {
 						</div>
 					</div>
 				</article>
-				<article className='xp-section__xp-cardxp-card'>
+				<article className='xp-section__xp-card xp-card'>
 					<h3 className='xp-card__heading'>Backend Development</h3>
 					<div className='xp-card__contents '>
 						<div className='xp-card__xp-item xp-item'>
