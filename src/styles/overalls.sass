@@ -312,6 +312,11 @@ a
                 margin: 0 auto
             &__contents
                 padding: 1rem
+    .services__container
+        grid-template-columns: 1fr 1fr
+        gap: 2rem
+    .service
+        height: auto
 /* =============================== Mobile =============================== */
 +media($bp-mobile)
     /* ============== Overalls ============== */
@@ -345,3 +350,7 @@ a
         .xp-card
             width: 100%
             padding: 2rem 1rem
+    .services__container
+        grid-template-columns: 1fr
+        gap: 1.5rem
+/* === */
