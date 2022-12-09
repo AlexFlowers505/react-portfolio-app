@@ -1,49 +1,5 @@
 import React from 'react'
-import IMG1 from '../../../../assets/img/pics/portfolio-previews/dev/portfolio1.jpg'
-import IMG2 from '../../../../assets/img/pics/portfolio-previews/dev/portfolio2.jpg'
-import IMG3 from '../../../../assets/img/pics/portfolio-previews/dev/portfolio3.jpg'
-import IMG4 from '../../../../assets/img/pics/portfolio-previews/dev/portfolio4.jpg'
-import IMG5 from '../../../../assets/img/pics/portfolio-previews/dev/portfolio5.png'
-import IMG6 from '../../../../assets/img/pics/portfolio-previews/dev/portfolio6.jpg'
-
-const data = [
-	{
-		img: IMG1,
-		title: 'Crypto Currency Dashboard & Financial Visualization',
-		githubURL: 'https://github.com',
-		demoURL: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
-	},
-	{
-		img: IMG1,
-		title: 'Crypto Currency Dashboard & Financial Visualization',
-		githubURL: 'https://github.com',
-		demoURL: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
-	},
-	{
-		img: IMG1,
-		title: 'Crypto Currency Dashboard & Financial Visualization',
-		githubURL: 'https://github.com',
-		demoURL: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
-	},
-	{
-		img: IMG1,
-		title: 'Crypto Currency Dashboard & Financial Visualization',
-		githubURL: 'https://github.com',
-		demoURL: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
-	},
-	{
-		img: IMG1,
-		title: 'Crypto Currency Dashboard & Financial Visualization',
-		githubURL: 'https://github.com',
-		demoURL: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
-	},
-	{
-		img: IMG1,
-		title: 'Crypto Currency Dashboard & Financial Visualization',
-		githubURL: 'https://github.com',
-		demoURL: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
-	},
-]
+import { portfolioData as data } from '../../../data/portfolio/portfolioData'
 
 export default function Portfolio() {
 	return (
