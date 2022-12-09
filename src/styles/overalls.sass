@@ -307,6 +307,31 @@ a
             display: flex
             gap: 1rem
             margin-bottom: 1rem
+.testimonials-section
+    .contents-wrapper
+        width: 40%
+    .review
+        &
+            background-color: $clr-bg-extra
+            text-align: center
+            padding: 2rem
+            border-radius: 2rem
+            user-select: none
+        &__author-pic-wrapper
+            width: 4rem
+            aspect-ratio: 1/1
+            overflow: hidden
+            border-radius: 50%
+            border-radius: 50%
+            margin: 0 auto 1rem
+            border: .4rem solid $clr-primary-glassy
+        &__the-review
+            color: $clr-whitish--glassy
+            font-weight: 300
+            display: block
+            width: 80%
+            margin: .8rem auto 0
+
 /* ============================================================== RESPONSIVENESS ============================================================== */
 
 /* =============================== Tablets =============================== */
@@ -349,6 +374,9 @@ a
         .content-wrapper
             grid-template-columns: 1fr 1fr
             gap: 1.2rem
+    .testimonials-section
+        .contents-wrapper
+            60%
 /* =============================== Mobile =============================== */
 +media($bp-mobile)
     /* ============== Overalls ============== */
@@ -390,4 +418,10 @@ a
         .content-wrapper
             grid-template-columns: 1fr
             gap: 1rem
+    .testimonials-section
+        .contents-wrapper
+            width: $w-sm-tank
+        .review
+            &__the-review
+                width: $w-sm-tank
 /* === */
