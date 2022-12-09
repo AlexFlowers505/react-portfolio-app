@@ -282,28 +282,31 @@ a
             margin-top: 2px
         &__desc
             font-size: .9rem
-.portfolio__container
-    display: grid
-    grid-template-columns: repeat(3, 1fr)
-    gap: 2.5rem
-.portfolio__item
-    background-color: $clr-bg-extra
-    padding: 1.3rem
-    border: 1px solid transparent
-    border-radius: 2rem
-    transition: $transition-basic
-.portfolio__item:hover
-    border-color: $clr-primary-glassy
-    background-color: transparent
-.portfolio__item-image
-    border-radius: 1.5rem
-    overflow: hidden
-.portfolio__item h3
-    margin: 1.2rem 0 2rem
-.portfolio__item-cta
-    display: flex
-    gap: 1rem
-    margin-bottom: 1rem
+.portfolio-section
+    .content-wrapper
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 2.5rem
+    .content-item
+        &
+            &
+                background-color: $clr-bg-extra
+                padding: 1.3rem
+                border: 1px solid transparent
+                border-radius: 2rem
+                transition: $transition-basic
+            +hocus
+                border-color: $clr-primary-glassy
+                background-color: transparent
+        &__img-wrapper
+            border-radius: 1.5rem
+            overflow: hidden
+        &__heading
+            margin: 1.2rem 0 2rem
+        &__cta-wrapper
+            display: flex
+            gap: 1rem
+            margin-bottom: 1rem
 /* ============================================================== RESPONSIVENESS ============================================================== */
 
 /* =============================== Tablets =============================== */
@@ -342,9 +345,10 @@ a
             gap: 2rem
         .service-card
             height: auto
-    .portfolio__container
-        grid-template-columns: 1fr 1fr
-        gap: 1.2rem
+    .portfolio-section
+        .content-wrapper
+            grid-template-columns: 1fr 1fr
+            gap: 1.2rem
 /* =============================== Mobile =============================== */
 +media($bp-mobile)
     /* ============== Overalls ============== */
@@ -382,7 +386,8 @@ a
         &__inner-wrapper
             grid-template-columns: 1fr
             gap: 1.5rem
-    .portfolio__container
-        grid-template-columns: 1fr
-        gap: 1rem
+    .portfolio-section
+        .content-wrapper
+            grid-template-columns: 1fr
+            gap: 1rem
 /* === */
