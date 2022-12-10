@@ -310,6 +310,7 @@ a
 .testimonials-section
     .contents-wrapper
         width: 40%
+        padding-bottom: 4rem
     .review
         &
             background-color: $clr-bg-extra
@@ -331,7 +332,10 @@ a
             display: block
             width: 80%
             margin: .8rem auto 0
-
+    .swiper
+        &-pagination
+            &-bullet
+                 background-color: $clr-primary
 /* ============================================================== RESPONSIVENESS ============================================================== */
 
 /* =============================== Tablets =============================== */
@@ -376,7 +380,7 @@ a
             gap: 1.2rem
     .testimonials-section
         .contents-wrapper
-            60%
+            width: 60%
 /* =============================== Mobile =============================== */
 +media($bp-mobile)
     /* ============== Overalls ============== */
