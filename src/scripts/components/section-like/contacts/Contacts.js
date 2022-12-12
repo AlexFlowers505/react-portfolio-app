@@ -12,19 +12,19 @@ export default function Contacts() {
       <div className='tank contact__container'>
 			<div className='contact__options'>
 				<article className='contact__option'>
-					<EmailIcon />
+					<EmailIcon className='contact__option-icon' />
 					<h4>Email</h4>
 					<h5>someEmail@gmail.com</h5>
 					<a href='mailto:someEmail@gmail.com' target='_black' rel='noopener' >Send a message</a>
 				</article>
 				<article className='contact__option'>
-					<FBIcon />
+					<FBIcon className='contact__option-icon' />
 					<h4>Messenger</h4>
 					<h5>someTelegram</h5>
 					<a href='https://m.me/ernest.achiever' target='_black' rel='noopener' >Send a message</a>
 				</article>
 				<article className='contact__option'>
-					<WhatsappIcon />
+					<WhatsappIcon className='contact__option-icon' />
 					<h4>WhatsApp</h4>
 					<h5>someEmail@gmail.com</h5>
 					<a href='https://api.whatsapp.com/send?phone=+23342234234' target='_black' rel='noopener' >Send a message</a>
