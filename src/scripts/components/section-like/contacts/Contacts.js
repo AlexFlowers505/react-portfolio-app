@@ -9,22 +9,22 @@ export default function Contacts() {
     <section id='contacts-section' className='contacts-section'>
       <h5 className='contacts-section__preheading'>Get In Touch</h5>
       <h2 className='contacts-section__heading'>Contact Me</h2>
-      <div className='tank contact__container contacts-section__contacts-content contacts-content'>
-			<div className='contact__options contacts-content__contacts-list'>
-				<article className='contact__option contacts-content__contacts-item contacts-item'>
-					<EmailIcon className='contact__option-icon contacts-item__icon' />
+      <div className='tank contacts-section__contacts-content contacts-content'>
+			<div className='contacts-content__contacts-list'>
+				<article className='contacts-content__contacts-item contacts-item'>
+					<EmailIcon className='contacts-item__icon' />
 					<h4 className='contacts-item__heading'>Email</h4>
 					<h5 className='contacts-item__val'>someEmail@gmail.com</h5>
 					<a className='contacts-item__cta-btn' href='mailto:someEmail@gmail.com' target='_black' rel='noopener' >Send a message</a>
 				</article>
-				<article className='contact__option contacts-content__option-item'>
-					<FBIcon className='contact__option-icon' />
+				<article className=' contacts-content__contacts-item contacts-item'>
+					<FBIcon className='contacts-item__icon' />
 					<h4 className='contacts-item__heading'>Messenger</h4>
 					<h5 className='contacts-item__val'>someTelegram</h5>
 					<a className='contacts-item__cta-btn' href='https://m.me/ernest.achiever' target='_black' rel='noopener' >Send a message</a>
 				</article>
-				<article className='contact__option contacts-content__option-item'>
-					<WhatsappIcon className='contact__option-icon' />
+				<article className='contacts-content__contacts-item contacts-item'>
+					<WhatsappIcon className='contacts-item__icon' />
 					<h4 className='contacts-item__heading'>WhatsApp</h4>
 					<h5 className='contacts-item__val'>someEmail@gmail.com</h5>
 					<a className='contacts-item__cta-btn' href='https://api.whatsapp.com/send?phone=+23342234234' target='_black' rel='noopener' >Send a message</a>
