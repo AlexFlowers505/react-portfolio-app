@@ -336,11 +336,12 @@ a
         &-pagination
             &-bullet
                  background-color: $clr-primary
-.tank.contact__container
-    width: 58%
-    display: grid
-    grid-template-columns: 30% 58%
-    gap: 12%
+.tank.contacts-section
+    &
+        width: 58%
+        display: grid
+        grid-template-columns: 30% 58%
+        gap: 12%
 .contact__options
     display: flex
     flex-direction: column
@@ -421,6 +422,9 @@ input, textarea
     .testimonials-section
         .contents-wrapper
             width: 60%
+    .tank.contacts-section
+        grid-template-columns: 1fr
+        gap: 2rem
 /* =============================== Mobile =============================== */
 +media($bp-mobile)
     /* ============== Overalls ============== */
@@ -468,4 +472,6 @@ input, textarea
         .review
             &__the-review
                 width: $w-sm-tank
+    .tank.ccontacts-section
+        width: $w-sm-tank
 /* === */
