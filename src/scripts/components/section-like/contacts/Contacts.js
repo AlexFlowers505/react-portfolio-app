@@ -1,10 +1,46 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import { MdOutlineEmail as EmailIcon } from 'react-icons/md'
 import { RiMessengerLine as FBIcon} from 'react-icons/ri'
 import { BsWhatsapp as WhatsappIcon} from 'react-icons/bs'
 
+import emailjs from 'emailjs-com'
+
+export const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = evt => {
+    evt.preventDefault()
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then( result => {
+          console.log(result.text)
+      }, err => {
+          console.log(err.text)
+      })
+  }
+
+  return (
+    <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form>
+  );
+};
+
+
 export default function Contacts() {
+	const form = useRef()
+	const sendEmail = evt => {
+		evt.preventDefault()
+		emailjs.sendForm('service_21wtjkb', 'template_g2e7kfw', form.current, 'icMWhDpKzSX4k5XJ_')
+		evt.target.reset()
+	}
   return (
     <section id='contacts-section' className='contacts-section'>
       <h5 className='contacts-section__preheading'>Get In Touch</h5>
@@ -30,7 +66,7 @@ export default function Contacts() {
 					<a className='contacts-item__cta-btn' href='https://api.whatsapp.com/send?phone=+23342234234' target='_black' rel='noopener' >Send a message</a>
 				</article>
 			</div>
-			<form className='contacts-content__message-form message-form' action=''>
+			<form className='contacts-content__message-form message-form' ref={form} onSubmit={sendEmail}>
 				<input className='message-form__field message-form--author-name' type="text" name="name" id="" placeholder='Your Full Name' required />
 				<input className='message-form__field message-form--autho-email' type="email" name='email' placeholder='Your Email' required />
 				<textarea className='message-form__field message-form--the-message' name="message" id="" rows="7" placeholder='Your Message' required></textarea>
