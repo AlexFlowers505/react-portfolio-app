@@ -380,6 +380,44 @@ a
                 border: 2px solid $clr-primary-glassy
                 resize: none
                 color: $clr-whitish
+.footer
+    &
+        background-color: $clr-primary
+        padding: 3rem 0
+        text-align: center
+        font-size: .9rem
+        margin-top: 7rem
+    a
+        color: $clr-bg-basic
+    &__logo
+        font-size: 2rem
+        font-weight: 500
+        margin-bottom: 2rem
+        display: inline-block
+    .permalinks
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 2rem
+        margin: 0 auto 3rem
+    &__socials
+        display: flex
+        justify-content: center
+        gap: 1rem
+        margin-bottom: 4rem
+        a
+            background-color: $clr-bg-basic
+            color: $clr-whitish
+            padding: .8rem
+            border-radius: .7rem
+            +hocus
+                background-color: transparent
+                color: $clr-bg-basic
+                border-color: $clr-bg-basic
+    &__copyright
+        margin-bottom: 4rem
+        color: $clr-bg-basic
+
 /* ============================================================== RESPONSIVENESS ============================================================== */
 
 /* =============================== Tablets =============================== */
@@ -481,4 +519,10 @@ a
         .contacts-content
             &.tank        
                 width: $w-sm-tank
+    .footer
+        .permalinks
+            flex-direction: column
+            gap: 1.5rem
+        &__socials
+            margin-bottom: 2.6rem
 /* === */
