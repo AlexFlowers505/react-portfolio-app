@@ -6,8 +6,8 @@ import { IoLogoTwitter as TwitterIcon} from 'react-icons/io'
 export default function Footer() {
   return (
     <footer id='footer' className='footer'>
-      <a href='' className='footer__logo logo'></a>
-      <ul className='footer__links-list permalinks'>
+      <a href='' className='footer__logo logo'>Egator</a>
+      <ul className='footer__links-list'>
         <li className='footer__links-item'><a href='#' className='footer__the-link'>Home</a></li>
         <li className='footer__links-item'><a href='#about-section' className='footer__the-link'>About</a></li>
         <li className='footer__links-item'><a href='#xp-section' className='footer__the-link'>Experience</a></li>

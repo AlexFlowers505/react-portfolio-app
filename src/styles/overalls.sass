@@ -387,33 +387,52 @@ a
         text-align: center
         font-size: .9rem
         margin-top: 7rem
-    a
-        color: $clr-bg-basic
     &__logo
         font-size: 2rem
         font-weight: 500
         margin-bottom: 2rem
         display: inline-block
-    .permalinks
+        color: $clr-bg-basic
+    &__links-list
         display: flex
         flex-wrap: wrap
         justify-content: center
-        gap: 2rem
+        gap: 1rem
         margin: 0 auto 3rem
-    &__socials
+    &__the-link
+        &
+            color: $clr-bg-basic
+            background-color: transparent
+            border-radius: .3rem
+            padding: .3rem .6rem
+            transform: scale(1)
+            display: inline-block
+        +hocus
+            background-color: $clr-bg-basic
+            transform: scale(1.1)
+    &__socials-list
         display: flex
         justify-content: center
         gap: 1rem
         margin-bottom: 4rem
-        a
+    &__socials-the-link
+        &
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: transparent
+            width: 1.9rem
+            height: 1.9rem
+            padding: .3rem
+            transform: scale(1)
+            color: $clr-bg-basic
+            border-radius: 5rem
+            font-size: 1.5rem
+            box-sizing: content-box
+        +hocus
+            transform: scale(1.5) rotate(-20deg)
             background-color: $clr-bg-basic
             color: $clr-whitish
-            padding: .8rem
-            border-radius: .7rem
-            +hocus
-                background-color: transparent
-                color: $clr-bg-basic
-                border-color: $clr-bg-basic
     &__copyright
         margin-bottom: 4rem
         color: $clr-bg-basic
@@ -520,7 +539,7 @@ a
             &.tank        
                 width: $w-sm-tank
     .footer
-        .permalinks
+        &__links-list
             flex-direction: column
             gap: 1.5rem
         &__socials
