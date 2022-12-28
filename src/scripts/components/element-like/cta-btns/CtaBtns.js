@@ -8,7 +8,7 @@ export default function CtaBtns() {
            className='btn'
            target="_blank" 
            rel="noopener noreferrer">Download CV</a>
-        <a href="#Contacts-section"
+        <a href="#contacts-section"
            className='btn btn-primary'>Let's talk</a>
     </div>
   )
