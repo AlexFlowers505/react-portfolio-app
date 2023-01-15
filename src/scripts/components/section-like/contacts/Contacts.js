@@ -14,7 +14,7 @@ export default function Contacts() {
 		evt.target.reset()
 	}
   return (
-    <section id='contacts-section' className='contacts-section'>
+    <section id='contacts-section' className='contacts-section' data-intersection='#contacts-section'>
       <h5 className='contacts-section__preheading'>Get In Touch</h5>
       <h2 className='contacts-section__heading'>Contact Me</h2>
       <div className='tank contacts-section__contacts-content contacts-content'>

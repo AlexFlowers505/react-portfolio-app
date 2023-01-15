@@ -14,7 +14,7 @@ import photo1 from '../../../../assets/img/pics/me-photos/photo1.png'
 
 export default function Header() {
   return (
-    <header className='header'>
+    <header className='header' data-intersection='#'>
       <div className='tank header__tank'>
         <h5>Hello, I'm</h5>
         <h1>Alexander Flowers</h1>

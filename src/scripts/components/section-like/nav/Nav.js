@@ -5,9 +5,12 @@ import React from 'react'
 import { useState } from 'react'
 /* =============================== Components =============================== */
 /* ============== icons ============== */
-import { AiOutlineHome as HomeIcon, AiOutlineUser as UserIcon } from 'react-icons/ai'
+import { AiOutlineHome as HomeIcon, AiOutlineUser as UserIcon, AiOutlineLineChart as GrowthIcon, AiOutlineGift as ServiceIcon } from 'react-icons/ai'
 import { BiBook as BookIcon, BiMessageSquareDetail as ChatIcon } from 'react-icons/bi'
 import { RiServiceLine as HeartShakeIcon } from 'react-icons/ri'
+import { IoCheckmarkDoneSharp as DoubleCheckIcon } from 'react-icons/io5'
+import { TiMessages as MessagesIcon } from 'react-icons/ti'
+import { BsBriefcase as CaseIcon, BsChatSquareText as FeedbackIcon } from 'react-icons/bs'
 
 export default function Nav() {
   const [activeItem, setActiveItem] = useState('')
@@ -15,24 +18,39 @@ export default function Nav() {
   return (
     <nav className='main-nav'>
       <a href='#'
-         className={`main-nav__item${activeItem === '#' ? ' main-nav__item--active' : ''}`}
+         title='Home'
+         className={`main-nav__item${activeItem === '#' ? ' main-nav__item--active' : ''} main-nav__item--home`}
          onClick={ () => setActiveItem('#')}><HomeIcon />
       </a>
       <a href='#about-section'
-         className={`main-nav__item${activeItem === '#about-section' ? ' main-nav__item--active' : ''}`}
-         onClick={ () => setActiveItem('#about-section')}><BookIcon />
+         title='About me'
+         className={`main-nav__item${activeItem === '#about-section' ? ' main-nav__item--active' : '' } main-nav__item--about`}
+         onClick={ () => setActiveItem('#about-section')}><UserIcon />
       </a>
       <a href='#xp-section'
-         className={`main-nav__item${activeItem === '#xp-section' ? ' main-nav__item--active' : ''}`}
-         onClick={ () => setActiveItem('#xp-section')}><UserIcon />
+         title='Experience'
+         className={`main-nav__item${activeItem === '#xp-section' ? ' main-nav__item--active' : ''} main-nav__item--xp`}
+         onClick={ () => setActiveItem('#xp-section')}><GrowthIcon />
       </a>
       <a href='#services-section'
-         className={`main-nav__item${activeItem === '#services-section' ? ' main-nav__item--active' : ''}`}
-         onClick={ () => setActiveItem('#services-section')}><HeartShakeIcon />
+         title='Services'
+         className={`main-nav__item${activeItem === '#services-section' ? ' main-nav__item--active' : ''} main-nav__item--services`}
+         onClick={ () => setActiveItem('#services-section')}><ServiceIcon />
+      </a>
+      <a href='#portfolio-section'
+         title='Portfolio'
+         className={`main-nav__item${activeItem === '#services-section' ? ' main-nav__item--active' : ''} main-nav__item--portfolio`}
+         onClick={ () => setActiveItem('#portfolio-section')}><CaseIcon />
+      </a>
+      <a href='#testimonials-section'
+         title='Testimonials'
+         className={`main-nav__item${activeItem === '#services-section' ? ' main-nav__item--active' : ''} main-nav__item--testimonials`}
+         onClick={ () => setActiveItem('#testimonials-section')}><DoubleCheckIcon />
       </a>
       <a href='#contacts-section'
-         className={`main-nav__item${activeItem === '#contacts-section' ? ' main-nav__item--active' : ''}`}
-         onClick={ () => setActiveItem('#contacts-section')}><ChatIcon />
+         title='Contact me'
+         className={`main-nav__item${activeItem === '#contacts-section' ? ' main-nav__item--active' : ''} main-nav__item--contacts`}
+         onClick={ () => setActiveItem('#contacts-section')}><MessagesIcon />
       </a>
     </nav>
   )

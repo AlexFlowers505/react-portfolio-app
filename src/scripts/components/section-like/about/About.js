@@ -7,7 +7,7 @@ import { VscFolderLibrary as DirIcon } from 'react-icons/vsc'
 
 export default function About() {
   return (
-    <section id='about-section' className='about-section'>
+    <section id='about-section' className='about-section' data-intersection='#about-section'>
       <h5>Get to know</h5>
       <h2>About me</h2>
 			<div className='tank about-section__contents-wrapper'>

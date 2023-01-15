@@ -3,7 +3,7 @@ import { portfolioData as data } from '../../../data/portfolio/portfolioData'
 
 export default function Portfolio() {
 	return (
-		<section id='portfolio-section' className='portfolio-section'>
+		<section id='portfolio-section' className='portfolio-section' data-intersection='#portfolio-section'>
 			<h5 className='portfolio-section__preheading'>My Recent Work</h5>
 			<h2 className='portfolio-section__heading'>Portfolio</h2>
 			<div className="tank portfolio-section__content-wrapper content-wrapper">

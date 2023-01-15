@@ -3,7 +3,7 @@ import { BiCheck as CheckIcon } from 'react-icons/bi'
 
 export default function Services() {
   return (
-    <section id='services-section' className='services-section'>
+    <section id='services-section' className='services-section' data-intersection='#services-section'>
       <h5>What I Offer</h5>
       <h2>Services</h2>
       <div className="services-section__inner-wrapper tank">

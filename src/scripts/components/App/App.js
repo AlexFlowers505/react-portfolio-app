@@ -2,6 +2,7 @@
 
 /* =============================== Modules =============================== */
 import React from 'react'
+import SectionsObserver from '../functional/SectionsObserver'
 
 /* =============================== Components =============================== */
 import Header from '../section-like/header/Header'
@@ -18,6 +19,7 @@ import Footer from '../section-like/footer/Footer'
 export default function App() {
   return (
     <>
+      <SectionsObserver />
       <Header />
       <Nav />
       <About />
@@ -31,4 +33,3 @@ export default function App() {
   )
 }
 
-// hide scroll bar issue

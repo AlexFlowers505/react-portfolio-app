@@ -11,7 +11,7 @@ import 'swiper/css/pagination'
 
 export default function Testimonials() {
 	return (
-		<section id='testimonials-section' className='testimonials-section'>
+		<section id='testimonials-section' className='testimonials-section' data-intersection='#testimonials-section'>
 			<h5 className='testimonials-section__preheading'>Review from clients</h5>
 			<h2 className='testimonials-section__heading'>Testimonals</h2>
 			<Swiper 

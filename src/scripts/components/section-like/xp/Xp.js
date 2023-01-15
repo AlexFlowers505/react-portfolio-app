@@ -4,7 +4,7 @@ import { BsPatchCheckFill as StarCheckIcon } from 'react-icons/bs'
 
 export default function Xp() {
 	return (
-		<section id='xp-section' className='xp-section'>
+		<section id='xp-section' className='xp-section' data-intersection='#xp-section'>
 			<h5>What skills I have</h5>
 			<h2>My Experience</h2>
 			<div className='tank xp-section__contents-wrapper'>

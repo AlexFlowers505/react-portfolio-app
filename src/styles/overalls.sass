@@ -141,22 +141,57 @@ a
         padding: 0.7rem 1.7rem
         z-index: 2
         position: fixed
-        +nonStaticHcentering(10.5rem)
+        left: 50%
+        transform: translateX(-50%)
         bottom: 2rem
         display: flex
-        gap: 0.8rem
+        gap: .1rem
         border-radius: 3rem
         backdrop-filter: blur(15px)
     &__item
         &
-            background-color: transparent
-            padding: .9rem
-            display: flex
-            border-radius: 50%
-            color: $clr-whitish--glassy
-            font-size: 1.1rem
-        +hocus
-            background-color: $clr-blackish--glassy
+            &
+                &
+                    background-color: transparent
+                    position: relative
+                    padding: .9rem
+                    display: flex
+                    border-radius: 50%
+                    color: $clr-whitish--glassy
+                    font-size: 1.1rem
+                &--home::before
+                    content: 'Home'
+                &--about::before
+                    content: 'About me'
+                &--xp::before
+                    content: 'Experience'
+                &--services::before
+                    content: 'Services'
+                &--portfolio::before
+                    content: 'Portfolio'
+                &--testimonials::before
+                    content: 'Testimonials'
+                &--contacts::before
+                    content: 'Contact me'
+            &::before
+                opacity: 0
+                position: absolute
+                top: -3rem
+                left: 50%
+                transform: translateX(-50%)
+                text-align: center
+                padding: .5rem 1rem
+                background-color: $clr-blackish--glassy
+                border-radius: 5rem
+                transition: $transition-basic
+                width: max-content
+                height: fit-content
+        &:hover
+            &
+                background-color: $clr-blackish--glassy
+            &::before
+                opacity: 1
+                top: -4rem
         &--active
             background-color: $clr-whitish--glassier
             color: $clr-whitish
