@@ -14,7 +14,7 @@
     cursor: default
     transition: $transition-basic
 
-    font-family: 'Poppins', sans-serif
+    font-family: 'Poppins', 'Comfortaa', sans-serif
     font-weight: 300
     line-height: 1.7
 html
@@ -105,7 +105,30 @@ a
     padding-top: 5rem
     border-radius: 12rem 12rem 0 0
     background: $gradient-primary
-    
+.progress-circle
+    &
+        display: block
+        width: 100px
+        height: 100px
+        // margin: -100px
+        transform-origin: left top
+        transform: rotate(-90deg) scale(.3)
+        position: absolute
+        top: 90%
+    &__the-bar
+        &
+            position: absolute
+            top: 0
+            left: 0
+            fill: none
+            stroke: url(#GradientColor)
+            stroke-width: 30px
+            stroke-dasharray: 450
+            stroke-dashoffset: 200
+            transition: $transition-basic
+
+
+
 /* =============================== Relative =============================== */
 .header
     &
@@ -131,8 +154,38 @@ a
                 width: 1px
                 height: 2rem
                 background-color: $clr-primary
-        svg
-            +hocusClrSwitch($clr-primary, $clr-whitish)
+        &-item
+            &
+                &
+                    &
+                        position: relative
+                        +hocusClrSwitch($clr-primary, $clr-whitish)
+                        width: fit-content
+                        height: fit-content
+                    &::before
+                        opacity: 0
+                        position: absolute
+                        top: -13%
+                        left: -200%
+                        text-align: left
+                        padding: .5rem 1rem
+                        background-color: $clr-blackish--glassy
+                        border-radius: 5rem
+                        transition: $transition-basic
+                        width: max-content
+                        height: fit-content
+                &--tg::before
+                    content: 'Мой ТГ'
+                &--be::before
+                    content: 'Мой биханс'
+                &--gh::before
+                    content: 'Мой гитхаб'
+            &:hover::before
+                    opacity: 1
+                    left: 140%
+            svg
+                width: 2rem
+                height: 2rem
 .main-nav
     &
         background-color: $clr-blackish--glassy
@@ -160,19 +213,19 @@ a
                     color: $clr-whitish--glassy
                     font-size: 1.1rem
                 &--home::before
-                    content: 'Home'
+                    content: 'В начало'
                 &--about::before
-                    content: 'About me'
+                    content: 'Обо мне'
                 &--xp::before
-                    content: 'Experience'
+                    content: 'Мой опыт'
                 &--services::before
-                    content: 'Services'
+                    content: 'Мои услуги'
                 &--portfolio::before
-                    content: 'Portfolio'
+                    content: 'Портфолио'
                 &--testimonials::before
-                    content: 'Testimonials'
+                    content: 'Отзывы'
                 &--contacts::before
-                    content: 'Contact me'
+                    content: 'Контакты'
             &::before
                 opacity: 0
                 position: absolute
@@ -245,7 +298,7 @@ a
                 color: $clr-whitish--glassy
             &__icon
                 color: $clr-primary
-                font-size: 1.4rem
+                font-size: 2.5rem
                 margin-bottom: 1rem
         &__about-desc
             margin: 2rem 0px 2.6rem
@@ -273,14 +326,28 @@ a
                 display: grid
                 grid-template-columns: 1fr 1fr
                 row-gap: 2rem
-            &__xp-item
             .xp-item
                 &
-                    display: flex
-                    gap: 1rem
+                    &
+                        display: flex
+                        gap: 1rem
+                        position: relative
+                    &--ps circle
+                        stroke-dasharray: 420
+                    &--ai circle
+                        stroke-dasharray: 480
+                    &--fig circle
+                        stroke-dasharray: 470
+                    &--ae circle
+                        stroke-dasharray: 390
+                    &--pp circle
+                        stroke-dasharray: 320
                 &__icon
                     margin-top: 6px
                     color: $clr-primary
+                &__data-wrapper
+                    margin-left: 4rem
+                
 .services-section
     &__inner-wrapper
         display: grid

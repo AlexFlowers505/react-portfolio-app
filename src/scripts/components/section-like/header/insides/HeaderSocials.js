@@ -11,9 +11,9 @@ import { IoLogoBehance as BehanceIcon } from 'react-icons/io5'
 export default function HeaderSocials() {
   return (
     <div className='header__socials'>
-        <a href='https://t.me/AlexanderFlowers' target='_blank' rel='noopener noreferrer'><TelegramIcon /></a>
-        <a href='https://www.behance.net/AlexanderFlowers' target='_blank' rel='noopener noreferrer'><BehanceIcon /></a>
-        <a href='https://github.com/AlexFlowers505' target='_blank' rel='noopener noreferrer'><GithubIcon /></a>
+        <a className='header__socials-item header__socials-item--tg' href='https://t.me/AlexanderFlowers' target='_blank' rel='noopener noreferrer'><TelegramIcon /></a>
+        <a className='header__socials-item header__socials-item--be' href='https://www.behance.net/AlexanderFlowers' target='_blank' rel='noopener noreferrer'><BehanceIcon /></a>
+        <a className='header__socials-item header__socials-item--gh' href='https://github.com/AlexFlowers505' target='_blank' rel='noopener noreferrer'><GithubIcon /></a>
     </div>
   )
 }

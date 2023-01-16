@@ -7,9 +7,11 @@ export default function CtaBtns() {
         <a href={CV}
            className='btn'
            target="_blank" 
-           rel="noopener noreferrer">Download CV</a>
+           title='Скачать резюме'
+           rel="noopener noreferrer">Резюме</a>
         <a href="#contacts-section"
-           className='btn btn-primary'>Let's talk</a>
+           title='Перейти к контактам'
+           className='btn btn-primary'>Контакты</a>
     </div>
   )
 }

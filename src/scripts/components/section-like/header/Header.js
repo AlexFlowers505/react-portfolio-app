@@ -16,16 +16,15 @@ export default function Header() {
   return (
     <header className='header' data-intersection='#'>
       <div className='tank header__tank'>
-        <h5>Hello, I'm</h5>
-        <h1>Alexander Flowers</h1>
-        <h5 className='text-light'>Frontend Developer & Designer</h5>
+        <h1>Цветков Александр</h1>
+        <h5 className='text-light'>Фронтенд Разработчик & UX/UI Дизайнер</h5>
         <CtaBtns />
         <HeaderSocials />
 
         <div className='photo-block'>
           <img src={photo1} alt='Alexander Flowers' className='photo-block__photo' />
         </div>
-        <a className='header__scroll-down-btn scroll-down-btn' href='#contacts-section'>Scroll down</a>
+        <a className='header__scroll-down-btn scroll-down-btn' href='#contacts-section'>Вниз</a>
       </div>
     </header>
   )

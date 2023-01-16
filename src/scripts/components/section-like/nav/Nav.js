@@ -5,12 +5,14 @@ import React from 'react'
 import { useState } from 'react'
 /* =============================== Components =============================== */
 /* ============== icons ============== */
-import { AiOutlineHome as HomeIcon, AiOutlineUser as UserIcon, AiOutlineLineChart as GrowthIcon, AiOutlineGift as ServiceIcon } from 'react-icons/ai'
-import { BiBook as BookIcon, BiMessageSquareDetail as ChatIcon } from 'react-icons/bi'
-import { RiServiceLine as HeartShakeIcon } from 'react-icons/ri'
+import { AiOutlineHome as HomeIcon, 
+         AiOutlineUser as UserIcon, 
+         AiOutlineLineChart as GrowthIcon, 
+         AiOutlineGift as ServiceIcon 
+         } from 'react-icons/ai'
 import { IoCheckmarkDoneSharp as DoubleCheckIcon } from 'react-icons/io5'
 import { TiMessages as MessagesIcon } from 'react-icons/ti'
-import { BsBriefcase as CaseIcon, BsChatSquareText as FeedbackIcon } from 'react-icons/bs'
+import { BsBriefcase as CaseIcon } from 'react-icons/bs'
 
 export default function Nav() {
   const [activeItem, setActiveItem] = useState('')
