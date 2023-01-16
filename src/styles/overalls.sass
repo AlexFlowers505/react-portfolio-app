@@ -127,8 +127,6 @@ a
             stroke-dashoffset: 200
             transition: $transition-basic
 
-
-
 /* =============================== Relative =============================== */
 .header
     &
@@ -166,7 +164,7 @@ a
                         opacity: 0
                         position: absolute
                         top: -13%
-                        left: -200%
+                        left: -100%
                         text-align: left
                         padding: .5rem 1rem
                         background-color: $clr-blackish--glassy
@@ -306,13 +304,13 @@ a
 .xp-section
     &__contents-wrapper
         display: grid
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr
         gap: 2rem
     .xp-card
         &
             &
                 background-color: $clr-bg-extra
-                padding: 2.4rem 5rem
+                padding: 2.4rem 2rem
                 border-radius: 2rem
                 border: 1px solid transparent
             +hocus
@@ -332,22 +330,44 @@ a
                         display: flex
                         gap: 1rem
                         position: relative
+                    // ux/ui
                     &--ps circle
-                        stroke-dasharray: 420
+                        stroke-dasharray: 470
                     &--ai circle
-                        stroke-dasharray: 480
+                        stroke-dasharray: 470
                     &--fig circle
                         stroke-dasharray: 470
                     &--ae circle
-                        stroke-dasharray: 390
+                        stroke-dasharray: 410
                     &--pp circle
-                        stroke-dasharray: 320
+                        stroke-dasharray: 330
+                    // layout  
+                    &--html circle
+                        stroke-dasharray: 470
+                    &--sass circle
+                        stroke-dasharray: 470
+                    &--bt circle
+                        stroke-dasharray: 470
+                    &--bem circle
+                        stroke-dasharray: 470
+                    &--ant circle
+                        stroke-dasharray: 470
+                    &--git circle
+                        stroke-dasharray: 470
+                    // frontend
+                    &--js circle
+                        stroke-dasharray: 470
+                    &--react circle
+                        stroke-dasharray: 470
+                    &--webpack circle
+                        stroke-dasharray: 470
                 &__icon
                     margin-top: 6px
                     color: $clr-primary
                 &__data-wrapper
-                    margin-left: 4rem
-                
+                    margin-left: 4rem     
+                &__heading
+                    line-height: 1.2          
 .services-section
     &__inner-wrapper
         display: grid
