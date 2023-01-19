@@ -34,21 +34,21 @@ export default function Nav() {
          className={`main-nav__item${activeItem === '#xp-section' ? ' main-nav__item--active' : ''} main-nav__item--xp`}
          onClick={ () => setActiveItem('#xp-section')}><GrowthIcon />
       </a>
-      <a href='#services-section'
+      {/* <a href='#services-section'
          title='Services'
          className={`main-nav__item${activeItem === '#services-section' ? ' main-nav__item--active' : ''} main-nav__item--services`}
          onClick={ () => setActiveItem('#services-section')}><ServiceIcon />
-      </a>
+      </a> */}
       <a href='#portfolio-section'
          title='Portfolio'
          className={`main-nav__item${activeItem === '#services-section' ? ' main-nav__item--active' : ''} main-nav__item--portfolio`}
          onClick={ () => setActiveItem('#portfolio-section')}><CaseIcon />
       </a>
-      <a href='#testimonials-section'
+      {/* <a href='#testimonials-section'
          title='Testimonials'
          className={`main-nav__item${activeItem === '#services-section' ? ' main-nav__item--active' : ''} main-nav__item--testimonials`}
          onClick={ () => setActiveItem('#testimonials-section')}><DoubleCheckIcon />
-      </a>
+      </a> */}
       <a href='#contacts-section'
          title='Contact me'
          className={`main-nav__item${activeItem === '#contacts-section' ? ' main-nav__item--active' : ''} main-nav__item--contacts`}

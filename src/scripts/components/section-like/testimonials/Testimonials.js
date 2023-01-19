@@ -28,7 +28,7 @@ export default function Testimonials() {
 							<div className='review__author-pic-wrapper'>
 								<img className='review__author-pic' src={avatar} alt={name} />
 							</div>
-							<h5 className='review__author-name'>Ernest Achiever</h5>
+							<h5 className='review__author-name'>{name}</h5>
 							<small className='review__the-review'>{review}</small>
 						</SwiperSlide>
 					)

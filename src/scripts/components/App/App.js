@@ -24,7 +24,7 @@ export default function App() {
       <Nav />
       <About />
       <Xp />
-      <Services />
+      {/* <Services /> */}
       <Portfolio />
       <Testimonials />
       <Contacts />
