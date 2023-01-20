@@ -7,7 +7,7 @@ import { IoLogoBehance as BehanceIcon } from 'react-icons/io5'
 export default function Footer() {
   return (
     <footer id='footer' className='footer'>
-      <a href='' className='footer__logo logo'>Egator</a>
+      <a className='logo-af-link logo-af-link--footer' title='В начало' href='#'><svg className='logo-af'><use href='#logo-af' /></svg></a>
       <ul className='footer__links-list'>
         <li className='footer__links-item'><a href='#' className='footer__the-link'>В начало</a></li>
         <li className='footer__links-item'><a href='#about-section' className='footer__the-link'>Обо мне</a></li>

@@ -14,11 +14,13 @@ import Services from '../section-like/services/Services'
 import Testimonials from '../section-like/testimonials/Testimonials'
 import Xp from '../section-like/xp/Xp'
 import Footer from '../section-like/footer/Footer'
+import SvgSprite from '../../components/oth/SvgSprite'
 
 /* ============================================================== CODE ============================================================== */
 export default function App() {
   return (
     <>
+      <SvgSprite />
       <SectionsObserver />
       <Header />
       <Nav />

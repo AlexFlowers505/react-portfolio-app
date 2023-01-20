@@ -126,7 +126,32 @@ a
             stroke-dasharray: 450
             stroke-dashoffset: 200
             transition: $transition-basic
+.logo-af
+    color: $clr-whitish
+    margin-bottom: 3rem
+    width: 10rem
+    height: 10rem
+.logo-af-link
+    &
+        cursor: pointer
+        transform: scale(1)
+    .logo-af
+        &
+            cursor: pointer !important
+        +hocus
+            color: $clr-primary
+            transform: scale(1.05)
+    &--footer .logo-af
+        &
+            margin-bottom: 2rem
+            width: 4rem
+            height: 4rem
+            color: $clr-bg-basic
+        +hocus
+            color: $clr-whitish
+            transform: scale(1.15)
 
+    
 /* =============================== Relative =============================== */
 .header
     &
