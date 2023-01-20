@@ -16,6 +16,7 @@ export default function Header() {
   return (
     <header className='header' data-intersection='#'>
       <div className='tank header__tank'>
+        <a className='logo-af-link' href='#'><svg className='logo-af'><use href='#logo-af' /></svg></a>
         <h1>Цветков Александр</h1>
         <h5 className='text-light'>Фронтенд Разработчик & UX/UI Дизайнер</h5>
         <CtaBtns />
