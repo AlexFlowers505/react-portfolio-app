@@ -1,26 +1,26 @@
-import React from 'react'
+/* ============================================================== IMPORTS ============================================================== */
+
+/* =============================== Modules =============================== */
+import React, {useState} from 'react'
+
+/* =============================== Components =============================== */
+import PortfolioItem from './insides/PortfolioItem'
+/* =============================== Data =============================== */
 import { portfolioData as data } from '../../../data/portfolio/portfolioData'
 
+/* ============================================================== CODE ============================================================== */
+
+
 export default function Portfolio() {
+	// setting modal toggling
 	return (
 		<section id='portfolio-section' className='portfolio-section' data-intersection='#portfolio-section'>
 			<h5 className='portfolio-section__preheading'>Мои работы</h5>
 			<h2 className='portfolio-section__heading'>Портфолио</h2>
 			<div className="tank portfolio-section__content-wrapper content-wrapper">
 				{
-					data.map(({ img, title, githubURL, demoURL }, i) => {
-						return (
-							<article className='content-wrapper__content-item content-item' key={i}>
-								<div className='content-item__img-wrapper'>
-									<img className='content-item__img' src={img} alt={title} />
-								</div>
-								<h3 className='content-item__heading'>{title}</h3>
-								<div className="content-item__cta-wrapper">
-									<a className='btn content-item__cta-btn' href={githubURL} target='_blank' rel="noopener noreferrer">Гитхаб</a>
-									<a className='btn btn-primary content-item__cta-btn' href={demoURL} target='_blank' rel="noopener noreferrer">Демо</a>
-								</div>
-							</article>
-						)
+					data.map(({ img, title, url, demoUrl }, i) => {
+						return <PortfolioItem img={img} title={title} url={url} demoUrl={demoUrl} />
 					})
 				}
 			</div>

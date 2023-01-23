@@ -11,12 +11,14 @@
     text-decoration: none
     list-style: none
     outline: none
-    cursor: default
     transition: $transition-basic
 
     font-family: 'Poppins', 'Comfortaa', sans-serif
     font-weight: 300
     line-height: 1.7
+*:not(path)
+    cursor: default
+
 html
     &
         scroll-behavior: smooth
@@ -136,8 +138,6 @@ a
         cursor: pointer
         transform: scale(1)
     .logo-af
-        &
-            cursor: pointer !important
         +hocus
             color: $clr-primary
             transform: scale(1.05)
@@ -449,6 +449,9 @@ a
         &__img-wrapper
             border-radius: 1.5rem
             overflow: hidden
+            height: 19rem
+            object-position: top
+            background-color: $clr-whitish
         &__heading
             margin: 1.2rem 0 2rem
         &__cta-wrapper
