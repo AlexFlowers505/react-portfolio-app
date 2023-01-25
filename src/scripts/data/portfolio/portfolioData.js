@@ -1,4 +1,4 @@
-import IMG1 from '../../../assets/img/pics/portfolio-previews/dev/portfolio1.jpg'
+import investprojectsLandingMobilePreview from '../../../assets/img/pics/portfolio-previews/design/preview-investporjects-landing-mobile.jpg'
 
 export const portfolioData = [
     {
@@ -26,15 +26,9 @@ export const portfolioData = [
         demoUrl: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
     },
     {
-        img: IMG1,
-        title: 'Crypto Currency Dashboard & Financial Visualization',
-        url: 'https://github.com',
-        demoUrl: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
-    },
-    {
-        img: IMG1,
-        title: 'Crypto Currency Dashboard & Financial Visualization',
-        url: 'https://github.com',
+        img: investprojectsLandingMobilePreview,
+        title: 'Invest Projects Mobile Landing',
+        url: 'https://www.behance.net/gallery/141041603/InvestProjects-Landing-Page',
         demoUrl: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
     },
 ]
