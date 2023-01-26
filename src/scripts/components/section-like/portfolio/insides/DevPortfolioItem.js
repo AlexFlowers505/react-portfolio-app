@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import PreviewModal from './PreviewModal'
 
-export default function PortfolioItem({...props}) {
+export default function DevPortfolioItem({...props}) {
     const [isOpen, setIsOpen] = useState(false)
     const {img, title, url, demoUrl, i} = props
     return (
@@ -11,11 +11,8 @@ export default function PortfolioItem({...props}) {
             </div>
             <h3 className='content-item__heading'>{title}</h3>
             <div className="content-item__cta-wrapper">
-                <a className='btn content-item__cta-btn' href={url} target='_blank' rel="noopener noreferrer">Behance</a>
-                {/* <a className='btn btn-primary content-item__cta-btn' href={demoURL} target='_blank' rel="noopener noreferrer">Демо</a> */}
-                <button className='btn btn-primary content-item__cta-btn'
-                        onClick={()=>setIsOpen(true)}
-                        >Превью</button>
+                <a className='btn content-item__cta-btn' href={url} target='_blank' rel="noopener noreferrer">GitHub</a>
+                <a className='btn btn-primary content-item__cta-btn' href={demoUrl} target='_blank' rel="noopener noreferrer">Демо</a>
             </div>
             <PreviewModal open={isOpen} />
         </article>

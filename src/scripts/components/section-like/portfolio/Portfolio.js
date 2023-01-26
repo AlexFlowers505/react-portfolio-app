@@ -4,7 +4,8 @@
 import React, {useState} from 'react'
 
 /* =============================== Components =============================== */
-import PortfolioItem from './insides/PortfolioItem'
+import DesignPortfolioItem from './insides/DesignPortfolioItem'
+import DevPortfolioItem from './insides/DevPortfolioItem'
 /* =============================== Data =============================== */
 import { designPortfolioData as DesignData } from '../../../data/portfolio/designPortfolioData'
 import { devPortfolioData as DevData } from '../../../data/portfolio/devPortfolioData'
@@ -21,15 +22,15 @@ export default function Portfolio() {
 			<div className="tank portfolio-section__content-wrapper content-wrapper">
 				{
 					DesignData.map(({ img, title, url, demoUrl }, i) => {
-						return <PortfolioItem img={img} title={title} url={url} demoUrl={demoUrl} />
+						return <DesignPortfolioItem img={img} title={title} url={url} demoUrl={demoUrl} />
 					})
 				}
 								{
-					DevData.map(({ img, title, url, demoUrl }, i) => {
-						return <PortfolioItem img={img} title={title} url={url} demoUrl={demoUrl} />
-					})
-				}
-				<a className='btn btn-primary content-item__cta-btn' href="https://www.behance.net/AlexanderFlowers" target='_blank' rel="noopener noreferrer">Больше моих работ на Behance</a>
+									DevData.map(({ img, title, url, demoUrl }, i) => {
+										return <DevPortfolioItem img={img} title={title} url={url} demoUrl={demoUrl} />
+									})
+								}
+			{/* <a className='btn btn-primary content-item__cta-btn' href="https://www.behance.net/AlexanderFlowers" target='_blank' rel="noopener noreferrer">Больше моих работ на Behance</a> */}
 			</div>
 		</section>
 	)
