@@ -1,6 +1,9 @@
 import investprojectsLandingMobilePreview from '../../../assets/img/pics/portfolio-previews/design/preview-investporjects-landing-mobile.jpg'
+import analyticsLandingNsearchPreview from '../../../assets/img/pics/portfolio-previews/design/preview-analytics-landing-n-search.png'
+import investProjectsAccountMenuPreview from '../../../assets/img/pics/portfolio-previews/design/preview-investProjects-account-menu.jpg'
+import mapsPromoVidPreview from '../../../assets/img/pics/portfolio-previews/design/preview-maps-promo-vid.jpg'
 
-export const portfolioData = [
+export const designPortfolioData = [
     {
         img: 'https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/7f1a57141041707.624c8cc23e121.png',
         title: 'Регистрация на Invest Projects',
@@ -29,6 +32,24 @@ export const portfolioData = [
         img: investprojectsLandingMobilePreview,
         title: 'Invest Projects Mobile Landing',
         url: 'https://www.behance.net/gallery/141041603/InvestProjects-Landing-Page',
+        demoUrl: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
+    },
+    {
+        img: analyticsLandingNsearchPreview,
+        title: 'Invest Projects Analytics Landing & Search',
+        url: 'https://www.behance.net/gallery/162153517/Analytics-landing-search',
+        demoUrl: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
+    },
+    {
+        img: investProjectsAccountMenuPreview,
+        title: 'Invest Projects Account Menu',
+        url: 'https://www.behance.net/gallery/162155775/Account-menu-design',
+        demoUrl: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
+    },
+    {
+        img: mapsPromoVidPreview,
+        title: 'Maps interface features promo video',
+        url: 'https://www.behance.net/gallery/162161909/InvestProjects-Map-Features-Promo-Video',
         demoUrl: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization',
     },
 ]
