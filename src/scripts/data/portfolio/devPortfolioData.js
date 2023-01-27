@@ -4,6 +4,7 @@ import tailwindNextJsPortfolioPreview from '../../../assets/img/pics/portfolio-p
 import VanillaJsScssPortfolioPreview from '../../../assets/img/pics/portfolio-previews/dev/preview-vanilla-js-scss-portfolio.jpg'
 import CurrentReactPortfolioPreview from '../../../assets/img/pics/portfolio-previews/dev/preview-current-react-portfolio.jpg'
 import investProjectsLandingPreview from '../../../assets/img/pics/portfolio-previews/dev/preview-invest-projects-landing.png'
+import RememberThatAppLandingPreview from '../../../assets/img/pics/portfolio-previews/dev/preview-remember-that-app-landing.png'
 
 export const devPortfolioData = [
     {
@@ -41,5 +42,11 @@ export const devPortfolioData = [
         title: 'Invest Projects Landing',
         url: 'https://github.com/AlexFlowers505/Invest-projects-landing',
         demoUrl: 'https://invest-projects-landing.netlify.app/',
+    },
+    {
+        img: RememberThatAppLandingPreview,
+        title: 'Remember That App Simple Landing',
+        url: 'https://github.com/AlexFlowers505/RememberThat-tutorial-task-app-landing-',
+        demoUrl: 'https://remember-that-app-simple-landing.netlify.app/',
     },
 ]
