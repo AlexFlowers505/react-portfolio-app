@@ -5,6 +5,7 @@ import VanillaJsScssPortfolioPreview from '../../../assets/img/pics/portfolio-pr
 import CurrentReactPortfolioPreview from '../../../assets/img/pics/portfolio-previews/dev/preview-current-react-portfolio.jpg'
 import investProjectsLandingPreview from '../../../assets/img/pics/portfolio-previews/dev/preview-invest-projects-landing.png'
 import RememberThatAppLandingPreview from '../../../assets/img/pics/portfolio-previews/dev/preview-remember-that-app-landing.png'
+import PinkAppPreview from '../../../assets/img/pics/portfolio-previews/dev/preview-pink-app.png'
 
 export const devPortfolioData = [
     {
@@ -48,5 +49,11 @@ export const devPortfolioData = [
         title: 'Remember That App Simple Landing',
         url: 'https://github.com/AlexFlowers505/RememberThat-tutorial-task-app-landing-',
         demoUrl: 'https://remember-that-app-simple-landing.netlify.app/',
+    },
+    {
+        img: PinkAppPreview,
+        title: 'Pink App Study Project',
+        url: 'https://github.com/AlexFlowers505/pink-app',
+        demoUrl: 'https://pink-app-study-project.netlify.app/',
     },
 ]
