@@ -150,7 +150,44 @@ a
         +hocus
             color: $clr-whitish
             transform: scale(1.15)
-
+.toggler
+    &
+        margin: 0 auto 2rem
+        width: fit-content
+        padding: .5rem
+        border-radius: 50rem
+        border: 2px solid $clr-primary
+        display: flex
+        gap: .5rem
+        justify-content: center
+    &__item
+        &
+            border-radius: 50rem
+            border-color: transparent
+            font-weight: 500
+            font-size: 1.2rem
+            width: 11rem
+            display: flex
+            justify-content: center
+            background-color: transparent
+            color: $clr-primary
+            transform: scale(1)
+            margin: 0
+        +hocus
+            color: $clr-bg-basic
+            background-color: $clr-whitish
+            transform: scale(1.05)
+            transform-origin: left center
+            margin: 0 .5rem
+        &:active
+            transform: scale(.95)
+            background-color: $clr-whitish--glassy
+            margin: 0
+        &--active
+            background-color: $clr-primary
+            color: $clr-bg-basic
+            cursor: default
+            pointer-events: none
     
 /* =============================== Relative =============================== */
 .header
@@ -458,6 +495,9 @@ a
             display: flex
             gap: 1rem
             margin-bottom: 1rem
+    &__toggler
+        margin-top: -2rem
+        margin-bottom: 4rem
 .testimonials-section
     .contents-wrapper
         width: 40%
