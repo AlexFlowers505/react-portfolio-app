@@ -500,7 +500,30 @@ a
             margin-top: -2rem
             margin-bottom: 4rem
         &--secondary
-            margin-top: 2rem
+            &
+                margin-top: 2rem
+            .toggler__item
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-content: center
+                gap: 1rem
+                width: max-content
+            .toggler__item-icon
+                width: 25px
+                height: 25px
+                color: $clr-primary
+                position: relative
+                top: .2rem
+            &:hover
+                &
+                .toggler__item
+                    &
+                        margin: 0
+                        transform: scale(1)
+                .toggler__item-icon
+                    color: $clr-bg-basic
+
 .testimonials-section
     .contents-wrapper
         width: 40%

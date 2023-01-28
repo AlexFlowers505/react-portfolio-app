@@ -44,14 +44,23 @@ export default function Portfolio() {
 			{/* <a className='btn btn-primary content-item__cta-btn' href="https://www.behance.net/AlexanderFlowers" target='_blank' rel="noopener noreferrer">Больше моих работ на Behance</a> */}
 			</div>
 			<div className="portfolio-section__toggler portfolio-section__toggler--secondary toggler">
-				<a className={`btn btn-primary toggler__item ${toggler === 'design' ? 'toggler__item--active' : ''}`}
-					href="#portfolio-section" 
-					onClick={ (evt) => handleClick(evt, 'design') }
-					>Дизайн</a>
-				<a className={`btn btn-primary toggler__item ${toggler === 'dev' ? 'toggler__item--active' : ''}`}
-					href="#portfolio-section" 
-					onClick={ (evt) => handleClick(evt, 'dev') }
-					>Фронтенд</a>
+				{ toggler === 'dev' ? 
+					<a className={`btn btn-primary toggler__item ${toggler === 'design' ? 'toggler__item--active' : ''}`}
+						href="#portfolio-section" 
+						onClick={ (evt) => handleClick(evt, 'design') }
+					>
+						<span>Дизайн</span>
+						<svg className='toggler__item-icon'><use href='#arrow-up'/></svg>
+					</a>
+				: toggler === 'design' ?
+					<a className={`btn btn-primary toggler__item ${toggler === 'dev' ? 'toggler__item--active' : ''}`}
+						href="#portfolio-section" 
+						onClick={ (evt) => handleClick(evt, 'dev') }
+					>
+						<span>Фронтенд</span>
+						<svg className='toggler__item-icon'><use href='#arrow-up'/></svg>
+					</a>
+				: null }
 			</div>
 		</section>
 	)
