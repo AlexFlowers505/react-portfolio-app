@@ -173,7 +173,7 @@ a
             color: $clr-primary
             transform: scale(1)
             margin: 0
-        +hocus
+        &:hover
             color: $clr-bg-basic
             background-color: $clr-whitish
             transform: scale(1.05)
@@ -668,6 +668,8 @@ a
         .content-wrapper
             grid-template-columns: 1fr 1fr
             gap: 1.2rem
+        &__toggler
+                margin-top: 2rem
     .testimonials-section
         .contents-wrapper
             width: 60%

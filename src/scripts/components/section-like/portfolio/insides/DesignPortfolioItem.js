@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import PreviewModal from './PreviewModal'
+// import PreviewModal from './PreviewModal'
 
 export default function DesignPortfolioItem({...props}) {
     const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +17,7 @@ export default function DesignPortfolioItem({...props}) {
                         onClick={()=>setIsOpen(true)}
                         >Превью</button> */}
             </div>
-            <PreviewModal open={isOpen} />
+            {/* <PreviewModal open={isOpen} /> */}
         </article>
     )
 }

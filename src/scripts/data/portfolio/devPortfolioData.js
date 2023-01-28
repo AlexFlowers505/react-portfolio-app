@@ -36,7 +36,6 @@ export const devPortfolioData = [
         img: CurrentReactPortfolioPreview,
         title: 'Current React & Sass Portfolio',
         url: 'https://github.com/AlexFlowers505/react-portfolio-app',
-        demoUrl: 'https://alexander-flowers.netlify.app/',
     },
     {
         img: investProjectsLandingPreview,
