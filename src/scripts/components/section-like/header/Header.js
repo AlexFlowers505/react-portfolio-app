@@ -8,7 +8,8 @@ import CtaBtns from '../../element-like/cta-btns/CtaBtns'
 import HeaderSocials from './insides/HeaderSocials'
 
 /* =============================== Files =============================== */
-import photo1 from '../../../../assets/img/pics/me-photos/photo1.png'
+// import photo1 from '../../../../assets/img/pics/me-photos/photo1.png'
+import photo1 from '../../../../assets/img/pics/me-photos/photo1.jpg'
 
 /* ============================================================== CODE ============================================================== */
 

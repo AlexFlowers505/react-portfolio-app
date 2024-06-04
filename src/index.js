@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom/client'
 import './styles/overalls.sass'
 
 // • • components
-import App from './scripts/components/app/App'
+import App from './scripts/components/App/App'
 
 
 // • • • CODE
