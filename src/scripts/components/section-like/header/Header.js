@@ -20,11 +20,11 @@ export default function Header() {
         <a className='logo-af-link' href='#'><svg className='logo-af'><use href='#logo-af' /></svg></a>
         <h1>Цветков Александр</h1>
         <h5 className='text-light'>Фронтенд Разработчик & UX/UI Дизайнер</h5>
-        <CtaBtns />
         <HeaderSocials />
 
         <div className='photo-block'>
           <img src={photo1} alt='Alexander Flowers' className='photo-block__photo' />
+          <CtaBtns />
         </div>
         <a className='header__scroll-down-btn scroll-down-btn' href='#contacts-section'>Вниз</a>
       </div>
