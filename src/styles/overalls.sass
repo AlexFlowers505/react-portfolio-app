@@ -29,6 +29,7 @@ html
         display: none
 body
     &
+        min-width: 330px
         background-color: $clr-bg-basic
         background-size: 14px 14px
         background-image: repeating-linear-gradient(45deg, rgba(44, 44, 107, 0.32) 0, rgba(44, 44, 107, 0.32) 1.4000000000000001px, #1f1f38 0, #1f1f38 50%)
@@ -263,7 +264,7 @@ a
     &__name-block
         gap: 0 !important
     &__tagline
-        gap: 0 !important
+        gap: 6px !important
     &__pitch
         &
             flex-grow: 1
@@ -743,6 +744,21 @@ a
             color: $clr-whitish
 
 /* ============================================================== RESPONSIVENESS ============================================================== */
+
+/* =============================== Desktop-sm =============================== */
++media($bp-desktop-sm)
+    .header__content
+        align-items: center
+    .header__pitch
+        align-items: center
+        text-align: center
+    .header__name-block
+        align-items: center
+    .header__tagline
+        align-items: center
+    .photo-block
+        display: none
+
 
 /* =============================== Tablets =============================== */
 +media($bp-tablet)

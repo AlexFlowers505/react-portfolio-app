@@ -22,7 +22,7 @@ export default function Contacts() {
 				<article className=' contacts-content__contacts-item contacts-item'>
 					<TelegramIcon className='contacts-item__icon' />
 					<h4 className='contacts-item__heading'>Telegram</h4>
-					<a className='contacts-item__cta-btn' href='https://m.me/ernest.achiever' target='_black' rel='noopener' >Написать</a>
+					<a className='contacts-item__cta-btn' href='https://t.me/AlexanderFlowers' target='_black' rel='noopener' >Написать</a>
 				</article>
 				<article className='contacts-content__contacts-item contacts-item'>
 					<WhatsappIcon className='contacts-item__icon' />
