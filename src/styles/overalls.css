@@ -560,7 +560,7 @@ a * {
 
 .xp-section__contents-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
   gap: 2rem;
 }
 .xp-section .xp-card {
