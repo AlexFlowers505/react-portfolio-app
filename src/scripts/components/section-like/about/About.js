@@ -1,5 +1,5 @@
 import React from 'react'
-import myPhoto from '../../../../assets/img/pics/me-photos/photo2.jpg'
+import myPhoto from '../../../../assets/img/pics/me-photos/photo5.jpg'
 import { VscFolderLibrary as DirIcon } from 'react-icons/vsc'
 import { BsCodeSlash as CodeIcon } from 'react-icons/bs'
 import { GiPencilBrush as DesignToolsIcon } from 'react-icons/gi'

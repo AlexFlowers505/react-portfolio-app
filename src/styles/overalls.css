@@ -1007,7 +1007,7 @@ a * {
     display: none;
   }
   .about-section__img-outer-wrapper {
-    width: 65%;
+    width: 100%;
     margin: 0 auto 3rem;
   }
   .about-section .text-content__about-desc {
