@@ -1017,6 +1017,10 @@ a * {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
+  .about-section .text-content__contact-cta {
+    margin: 0 auto;
+    display: block;
+  }
   .xp-section__contents-wrapper {
     gap: 1rem;
   }
