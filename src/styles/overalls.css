@@ -82,7 +82,8 @@ h1 {
 }
 
 section {
-  margin-top: 8rem;
+  margin-top: 4rem;
+  padding-top: 4rem;
 }
 
 section > h2,
@@ -137,6 +138,17 @@ a * {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-center {
+  align-items: center;
+}
+
 .btn {
   width: -moz-max-content;
   width: max-content;
@@ -160,13 +172,21 @@ a * {
 .cta-btns {
   margin-top: 2.5rem;
   display: flex;
-  gap: 2.3rem;
+  gap: 2rem;
   justify-content: center;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 60%;
   margin-top: 0;
+}
+
+.btn-with-icon {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.btn-with-icon svg {
+  width: 25px;
+  color: #33334e;
 }
 
 .scroll-down-btn {
@@ -182,35 +202,17 @@ a * {
 }
 
 .photo-block {
-  width: 22rem;
-  height: 30rem;
-  position: relative;
-  left: calc(50% - 11rem);
-  overflow: hidden;
-  margin-top: 4rem;
-  padding: 1.5rem;
-  padding-top: 5rem;
-  border-radius: 12rem 12rem 0 0;
-  background: linear-gradient(rgb(77, 181, 255), transparent);
-  background: transparent;
-  padding: 0;
-  overflow: visible;
-  top: 10px;
-  max-width: 420px;
-  position: relative;
-  display: flex;
-  margin-top: 0;
-  left: 0;
-  width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 50%;
+  max-height: 910px;
 }
 .photo-block__photo {
   position: relative;
   z-index: 0;
-  width: 110%;
-  top: -10px;
-  max-width: unset;
+  width: 100%;
+  top: -50px;
+  right: -50px;
+  min-width: 500px;
+  max-width: 800px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -238,7 +240,6 @@ a * {
 
 .logo-af {
   color: rgb(255, 255, 255);
-  margin-bottom: 3rem;
   width: 10rem;
   height: 10rem;
 }
@@ -317,10 +318,40 @@ a * {
   height: 100%;
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   gap: 0;
+  background-color: rgb(44, 44, 108);
+  border-radius: 4rem;
+  background-color: #007bb8;
+  background-image: radial-gradient(at top left, #2620DF, transparent), radial-gradient(at top right, #BC5B6A, transparent), radial-gradient(at bottom left, #1F0A4C, transparent);
+}
+.header__name-block {
+  gap: 0 !important;
+}
+.header__tagline {
+  gap: 0 !important;
+}
+.header__pitch {
+  flex-grow: 1;
+  padding: 3rem;
+  text-align: start;
+  gap: 2rem;
+}
+.header__pitch .flex-col {
+  gap: 2rem;
+}
+.header__pitch h1 {
+  font-size: 3rem;
+  line-height: 56px;
+}
+.header__pitch h5 {
+  font-size: 1.5rem;
+}
+.header__pitch p {
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
 }
 .header__socials {
   display: flex;
@@ -328,9 +359,18 @@ a * {
   align-items: center;
   gap: 0.8rem;
   position: absolute;
-  left: 0;
+  right: 4%;
   top: 50%;
   bottom: 3rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  transform: translateY(-50%);
+}
+.header__socials::before {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background-color: rgb(77, 181, 255);
 }
 .header__socials::after {
   content: "";

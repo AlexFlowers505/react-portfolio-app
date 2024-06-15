@@ -17,16 +17,25 @@ export default function Header() {
   return (
     <header className='header' data-intersection='#'>
       <div className='tank header__tank'>
-        <a className='logo-af-link' href='#'><svg className='logo-af'><use href='#logo-af' /></svg></a>
-        <h1>Цветков Александр</h1>
-        <h5 className='text-light'>Фронтенд Разработчик & UX/UI Дизайнер</h5>
-        <HeaderSocials />
-
+        <div className="flex-col flex-center header__pitch">
+          <a className='logo-af-link' href='#'><svg className='logo-af'><use href='#logo-af' /></svg></a>
+          <div className="flex-col">
+            <div className="header__name-block flex-col">
+              <h1>Цветков Александр</h1>
+              <h5 className='text-light'>Фронтенд Разработчик & UX/UI Дизайнер</h5>
+            </div>
+            <div className="flex-col">
+              <p className='text-light'>Объединяю дизайн и разработку:</p>
+              <p className='text-light'>от идеи до готового продукта</p>
+            </div>
+          <CtaBtns />
+          </div>
+        </div>
         <div className='photo-block'>
           <img src={photo1} alt='Alexander Flowers' className='photo-block__photo' />
-          <CtaBtns />
         </div>
-        <a className='header__scroll-down-btn scroll-down-btn' href='#contacts-section'>Вниз</a>
+        <HeaderSocials />
+        {/* <a className='header__scroll-down-btn scroll-down-btn' href='#contacts-section'>Вниз</a> */}
       </div>
     </header>
   )
