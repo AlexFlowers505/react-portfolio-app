@@ -26,7 +26,7 @@ export default function About() {
             <article className="text-content__about-card about-card">
               <CodeIcon className='about-card__icon' />
               <h5 className='about-card__heading'>Фронтенд</h5>
-              <small className='about-card__desc'>1.5 года работы</small>
+              <small className='about-card__desc'>2 года работы</small>
             </article>
             <article className="text-content__about-card about-card">
               <DirIcon className='about-card__icon' />
