@@ -19,22 +19,22 @@ export default function Contacts() {
       <h2 className='contacts-section__heading'>Контакты</h2>
       <div className='tank contacts-section__contacts-content contacts-content'>
 			<div className='contacts-content__contacts-list'>
-				<article className=' contacts-content__contacts-item contacts-item'>
+				<a className=' contacts-content__contacts-item contacts-item' href='https://t.me/AlexanderFlowers' target='_black' rel='noopener'>
 					<TelegramIcon className='contacts-item__icon' />
 					<h4 className='contacts-item__heading'>Telegram</h4>
-					<a className='contacts-item__cta-btn' href='https://t.me/AlexanderFlowers' target='_black' rel='noopener' >Написать</a>
-				</article>
-				<article className='contacts-content__contacts-item contacts-item'>
+					<span className='contacts-item__cta-btn'>Написать</span>
+				</a>
+				<a className='contacts-content__contacts-item contacts-item' href='https://api.whatsapp.com/send?phone=+79312300887' target='_black' rel='noopener'>
 					<WhatsappIcon className='contacts-item__icon' />
 					<h4 className='contacts-item__heading'>WhatsApp</h4>
-					<a className='contacts-item__cta-btn' href='https://api.whatsapp.com/send?phone=+23342234234' target='_black' rel='noopener' >Написать</a>
-				</article>
-				<article className='contacts-content__contacts-item contacts-item'>
+					<span className='contacts-item__cta-btn'>Написать</span>
+				</a>
+				<a className='contacts-content__contacts-item contacts-item' href='mailto:allnewalex@yandex.com' target='_black' rel='noopener'>
 					<EmailIcon className='contacts-item__icon' />
 					<h4 className='contacts-item__heading'>Email</h4>
 					<h5 className='contacts-item__val'>allnewalex@yandex.com</h5>
-					<a className='contacts-item__cta-btn' href='mailto:allnewalex@yandex.com' target='_black' rel='noopener' >Написать</a>
-				</article>
+					<span className='contacts-item__cta-btn'>Написать</span>
+				</a>
 			</div>
 			<form className='contacts-content__message-form message-form' ref={form} onSubmit={sendEmail}>
 				<input className='message-form__field message-form--author-name' type="text" name="name" id="" placeholder='Ваше имя' required />

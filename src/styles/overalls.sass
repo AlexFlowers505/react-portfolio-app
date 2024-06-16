@@ -682,13 +682,18 @@ a
                 flex-direction: column
                 gap: 1.2rem
             &__field
-                width: 100%
-                padding: 1.5rem
-                border-radius: .5rem
-                background-color: transparent
-                border: 2px solid $clr-primary-glassy
-                resize: none
-                color: $clr-whitish
+                &
+                    cursor: text
+                    width: 100%
+                    padding: 1.5rem
+                    border-radius: .5rem
+                    background-color: transparent
+                    border: 2px solid $clr-primary-glassy
+                    resize: none
+                    color: $clr-whitish
+                &:hover,
+                &:focus
+                    background-color: $clr-bg-extra
 .footer
     &
         background-color: $clr-primary
