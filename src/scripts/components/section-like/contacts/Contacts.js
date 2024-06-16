@@ -24,7 +24,7 @@ export default function Contacts() {
 					<h4 className='contacts-item__heading'>Telegram</h4>
 					<span className='contacts-item__cta-btn'>Написать</span>
 				</a>
-				<a className='contacts-content__contacts-item contacts-item' href='https://api.whatsapp.com/send?phone=+79312300887' target='_black' rel='noopener'>
+				<a className='contacts-content__contacts-item contacts-item' href='https://wa.me/+79312300887' target='_black' rel='noopener'>
 					<WhatsappIcon className='contacts-item__icon' />
 					<h4 className='contacts-item__heading'>WhatsApp</h4>
 					<span className='contacts-item__cta-btn'>Написать</span>
