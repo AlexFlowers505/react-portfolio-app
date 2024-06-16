@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../../../assets/pdf/AlexanderFlowersCV.pdf'
+import CV from '../../../../assets/pdf/Цветков_Александр_Фронтенд_Разработка_UI_UX_дизайн.pdf'
 
 export default function CtaBtns() {
   return (

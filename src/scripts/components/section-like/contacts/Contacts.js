@@ -10,7 +10,7 @@ export default function Contacts() {
 	const form = useRef()
 	const sendEmail = evt => {
 		evt.preventDefault()
-		emailjs.sendForm('service_21wtjkb', 'template_g2e7kfw', form.current, 'icMWhDpKzSX4k5XJ_')
+		emailjs.sendForm('service_3iug3e2', 'template_g2e7kfw', form.current, 'icMWhDpKzSX4k5XJ_')
 		evt.target.reset()
 	}
   return (
