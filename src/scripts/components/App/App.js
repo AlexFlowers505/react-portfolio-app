@@ -14,24 +14,31 @@ import Services from '../section-like/services/Services'
 import Testimonials from '../section-like/testimonials/Testimonials'
 import Xp from '../section-like/xp/Xp'
 import Footer from '../section-like/footer/Footer'
+
+import { ModalProvider } from '../element-like/modal/ModalContext'
+import Modal from '../element-like/modal/Modal'
+
 import SvgSprite from '../../components/oth/SvgSprite'
 
 /* ============================================================== CODE ============================================================== */
 export default function App() {
   return (
     <>
-      <SvgSprite />
-      <SectionsObserver />
-      <Header />
-      <Nav />
-      <About />
-      <Xp />
-      {/* <Services /> */}
-      <Portfolio />
-      <Testimonials />
-      <Contacts />
-      <Footer />
+      <ModalProvider>
+        <SvgSprite />
+        <SectionsObserver />
+        <Header />
+        <Nav />
+        <About />
+        <Xp />
+        {/* <Services /> */}
+        <Portfolio />
+        <Testimonials />
+        <Contacts />
+        <Footer />
+
+        <Modal />
+      </ModalProvider>
     </>
   )
-} 
-
+}

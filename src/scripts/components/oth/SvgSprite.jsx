@@ -15,7 +15,7 @@ export default function SvgSprite() {
                     d="M321 135.256C321 117.624 316.166 100.476 307.222 85.7426C299.246 72.4585 287.643 61.5897 274.59 53.6193L190.231 2.89831C181.771 -2.41532 170.169 -0.241564 164.851 8.21193C159.291 16.907 161.95 28.2588 170.652 33.5724L247.276 79.7044C253.319 83.3273 258.879 87.4333 263.713 92.5054C277.008 106.756 284.743 125.595 284.743 145.4C284.743 145.4 284.743 201.918 284.743 225.346C284.743 235.249 292.961 243.461 302.871 243.461C312.782 243.461 321 235.249 321 225.346V149.748V135.256Z"
                     fill="currentColor" />
             </symbol>
-            <symbol id='arrow-up' style={{cursor: 'inherit'}} stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 19h18a1.002 1.002 0 0 0 .823-1.569l-9-13c-.373-.539-1.271-.539-1.645 0l-9 13A.999.999 0 0 0 3 19zm9-12.243L19.092 17H4.908L12 6.757z"></path></symbol>
+            <symbol id='arrow-up' style={{cursor: 'inherit'}} stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 19h18a1.002 1.002 0 0 0 .823-1.569l-9-13c-.373-.539-1.271-.539-1.645 0l-9 13A.999.999 0 0 0 3 19zm9-12.243L19.092 17H4.908L12 6.757z"></path></symbol>
         </defs>
     </svg>
   )

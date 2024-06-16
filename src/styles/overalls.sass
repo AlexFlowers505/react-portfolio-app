@@ -29,7 +29,7 @@ html
         display: none
 body
     &
-        min-width: 330px
+        min-width: $min-width
         background-color: $clr-bg-basic
         background-size: 14px 14px
         background-image: repeating-linear-gradient(45deg, rgba(44, 44, 107, 0.32) 0, rgba(44, 44, 107, 0.32) 1.4000000000000001px, #1f1f38 0, #1f1f38 50%)
@@ -749,6 +749,94 @@ a
             background-color: $clr-bg-basic
             color: $clr-whitish
 
+
+.modal
+    &
+        position: fixed
+        width: 100vw
+        height: 100vh
+        top: 0
+        left: 0
+        background-color: rgba(0,0,0,.5)
+        backdrop-filter: blur(3px)
+        z-index: 2
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+    &--success
+        .modal
+            &-icon
+                color: #52c848
+            &-text--xl
+                color: #52c848
+    &--error
+        .modal
+            &-icon
+                color: #d23454
+            &-text--xl
+                color: #d23454
+    &-content
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+        position: relative
+        top: -10%
+        border-radius: 2rem
+        background-color: transparentize($clr-bg-extra, .3)
+        backdrop-filter: blur(3px)
+        padding: 2rem
+        // overflow: hidden
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        gap: 1rem
+    &-icon
+        width: 30%
+    &-text-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        gap: .5rem
+    &-text
+        &
+            color: $clr-whitish
+            text-align: center
+            line-height: 2.2rem
+        &--xl
+            font-size: 1.6rem
+            font-weight: 900
+        &--sm
+            font-size: 1.1rem
+            opacity: .7
+    &-socials
+        &
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            flex-wrap: wrap
+            gap: 1rem
+        &__item
+            &
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+                gap: .5rem
+            &:hover,
+            &:focus
+                .modal-socials
+                    &__name,
+                    &__icon
+                        color: $clr-primary
+        &__icon
+            width: 20px
+            height: 20px
+        &__name
+    .btn
+        margin: 2rem auto 0
+        display: block
 /* ============================================================== RESPONSIVENESS ============================================================== */
 
 /* =============================== Desktop-sm =============================== */
@@ -817,6 +905,13 @@ a
             &.tank
                 grid-template-columns: 1fr
                 gap: 2rem
+    .modal
+        &
+            min-width: $min-width
+        &-content
+            max-width: 90%
+        .btn
+            margin: 1rem auto
 /* =============================== Mobile =============================== */
 +media($bp-mobile)
     /* ============== Overalls ============== */
@@ -898,4 +993,8 @@ a
             gap: 1.5rem
         &__socials
             margin-bottom: 2.6rem
+    .modal
+        &
+        &-content
+            padding: 1rem
 /* === */

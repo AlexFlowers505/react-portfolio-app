@@ -893,6 +893,98 @@ a * {
   color: rgb(255, 255, 255);
 }
 
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.modal--success .modal-icon {
+  color: #52c848;
+}
+.modal--success .modal-text--xl {
+  color: #52c848;
+}
+.modal--error .modal-icon {
+  color: #d23454;
+}
+.modal--error .modal-text--xl {
+  color: #d23454;
+}
+.modal-content {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  top: -10%;
+  border-radius: 2rem;
+  background-color: rgba(44, 44, 108, 0.7);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.modal-icon {
+  width: 30%;
+}
+.modal-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.modal-text {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 2.2rem;
+}
+.modal-text--xl {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+.modal-text--sm {
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+.modal-socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.modal-socials__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.modal-socials__item:hover .modal-socials__name, .modal-socials__item:hover .modal-socials__icon, .modal-socials__item:focus .modal-socials__name, .modal-socials__item:focus .modal-socials__icon {
+  color: rgb(77, 181, 255);
+}
+.modal-socials__icon {
+  width: 20px;
+  height: 20px;
+}
+.modal .btn {
+  margin: 2rem auto 0;
+  display: block;
+}
+
 /* ============================================================== RESPONSIVENESS ============================================================== */
 /* =============================== Desktop-sm =============================== */
 @media (max-width: 1450px) {
@@ -964,6 +1056,15 @@ a * {
   .contacts-section .contacts-content.tank {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  .modal {
+    min-width: 330px;
+  }
+  .modal-content {
+    max-width: 90%;
+  }
+  .modal .btn {
+    margin: 1rem auto;
   }
 }
 /* =============================== Mobile =============================== */
@@ -1055,6 +1156,9 @@ a * {
   }
   .footer__socials {
     margin-bottom: 2.6rem;
+  }
+  .modal-content {
+    padding: 1rem;
   }
 }
 /* === *//*# sourceMappingURL=overalls.css.map */
