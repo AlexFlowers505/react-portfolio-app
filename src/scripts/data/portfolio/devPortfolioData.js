@@ -9,6 +9,11 @@ import PinkAppPreview from '../../../assets/img/pics/portfolio-previews/dev/prev
 
 export const devPortfolioData = [
     {
+        img: CurrentReactPortfolioPreview,
+        title: 'Current React & Sass Portfolio',
+        url: 'https://github.com/AlexFlowers505/react-portfolio-app',
+    },
+    {
         img: movieSearchAppPreview,
         title: 'React Movie DataBase App',
         url: 'https://github.com/AlexFlowers505/react-redux-movie-data-base',
@@ -31,11 +36,6 @@ export const devPortfolioData = [
         title: 'Vanilla JS & SCSS Portfolio',
         url: 'https://github.com/AlexFlowers505/Portfolio-landing-HTML-Sass-BEM-JS-',
         demoUrl: 'https://simple-js-scss-portfolio.netlify.app',
-    },
-    {
-        img: CurrentReactPortfolioPreview,
-        title: 'Current React & Sass Portfolio',
-        url: 'https://github.com/AlexFlowers505/react-portfolio-app',
     },
     {
         img: investProjectsLandingPreview,
