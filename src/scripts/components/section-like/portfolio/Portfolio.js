@@ -14,7 +14,7 @@ import { devPortfolioData as DevData } from '../../../data/portfolio/devPortfoli
 
 
 export default function Portfolio() {
-	const [toggler, setToggler] = useState('design')
+	const [toggler, setToggler] = useState('dev')
 	const handleClick = (evt, state) => {
 		setToggler(state)
 		evt.target.blur()
@@ -24,12 +24,12 @@ export default function Portfolio() {
 			<h5 className='portfolio-section__preheading'>Мои работы</h5>
 			<h2 className='portfolio-section__heading'>Портфолио</h2>
 			<div className="portfolio-section__toggler toggler">
-				<button className={`btn btn-primary toggler__item ${toggler === 'design' ? 'toggler__item--active' : ''}`}
-						onClick={ (evt) => handleClick(evt, 'design') }
-						>Дизайн</button>
 				<button className={`btn btn-primary toggler__item ${toggler === 'dev' ? 'toggler__item--active' : ''}`}
 						onClick={ (evt) => handleClick(evt, 'dev') }
 						>Фронтенд</button>
+				<button className={`btn btn-primary toggler__item ${toggler === 'design' ? 'toggler__item--active' : ''}`}
+						onClick={ (evt) => handleClick(evt, 'design') }
+						>Дизайн</button>
 			</div>
 			<div className="tank portfolio-section__content-wrapper content-wrapper">
 				{ 
