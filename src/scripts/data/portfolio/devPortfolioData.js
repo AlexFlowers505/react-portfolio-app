@@ -6,8 +6,15 @@ import CurrentReactPortfolioPreview from '../../../assets/img/pics/portfolio-pre
 import investProjectsLandingPreview from '../../../assets/img/pics/portfolio-previews/dev/preview-invest-projects-landing.png'
 import RememberThatAppLandingPreview from '../../../assets/img/pics/portfolio-previews/dev/preview-remember-that-app-landing.png'
 import PinkAppPreview from '../../../assets/img/pics/portfolio-previews/dev/preview-pink-app.png'
+import weatherPulseAppPreview from '../../../assets/img/pics/portfolio-previews/dev/preview-weather-pulse-app.jpg'
 
 export const devPortfolioData = [
+    {
+        img: weatherPulseAppPreview,
+        title: 'Weather Pulse App',
+        url: 'https://github.com/AlexFlowers505/weather-pulse',
+        demoUrl: 'https://weather-pulse-app.netlify.app',
+    },
     {
         img: CurrentReactPortfolioPreview,
         title: 'Current React & Sass Portfolio',
