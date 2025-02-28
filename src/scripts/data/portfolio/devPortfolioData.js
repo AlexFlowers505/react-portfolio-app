@@ -16,15 +16,15 @@ export const devPortfolioData = [
         demoUrl: 'https://weather-pulse-app.netlify.app',
     },
     {
+        img: investProjectsLandingPreview,
+        title: 'Investprojects Landing',
+        url: 'https://github.com/AlexFlowers505/Invest-projects-landing',
+        demoUrl: 'https://invest-projects-landing.netlify.app/',
+    },
+    {
         img: CurrentReactPortfolioPreview,
         title: 'Current React & Sass Portfolio',
         url: 'https://github.com/AlexFlowers505/react-portfolio-app',
-    },
-    {
-        img: movieSearchAppPreview,
-        title: 'React Movie DataBase App',
-        url: 'https://github.com/AlexFlowers505/react-redux-movie-data-base',
-        demoUrl: 'https://react-movie-app-505.netlify.app',
     },
     {
         img: recipesAppPreview,
@@ -32,6 +32,12 @@ export const devPortfolioData = [
         url: 'https://github.com/AlexFlowers505/recipes-react-app',
         demoUrl: 'https://recipes-app-react-505.netlify.app',
     },
+    // {
+    //     img: movieSearchAppPreview,
+    //     title: 'React Movie DataBase App',
+    //     url: 'https://github.com/AlexFlowers505/react-redux-movie-data-base',
+    //     demoUrl: 'https://react-movie-app-505.netlify.app',
+    // },
     {
         img: tailwindNextJsPortfolioPreview,
         title: 'Next JS & Tailwind Portfolio',
@@ -43,12 +49,6 @@ export const devPortfolioData = [
         title: 'Vanilla JS & SCSS Portfolio',
         url: 'https://github.com/AlexFlowers505/Portfolio-landing-HTML-Sass-BEM-JS-',
         demoUrl: 'https://simple-js-scss-portfolio.netlify.app',
-    },
-    {
-        img: investProjectsLandingPreview,
-        title: 'Invest Projects Landing',
-        url: 'https://github.com/AlexFlowers505/Invest-projects-landing',
-        demoUrl: 'https://invest-projects-landing.netlify.app/',
     },
     {
         img: RememberThatAppLandingPreview,
