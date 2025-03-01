@@ -33,11 +33,11 @@ export default function Portfolio() {
 			</div>
 			<div className="tank portfolio-section__content-wrapper content-wrapper">
 				{ 
-					toggler === 'design' ? DesignData.map(({ img, title, url, demoUrl }, i) => {
-						return <DesignPortfolioItem img={img} title={title} url={url} demoUrl={demoUrl} key={i} />
+					toggler === 'design' ? DesignData.map(({ img, title, url, demoUrl, isFavourite, }, i) => {
+						return <DesignPortfolioItem img={img} title={title} url={url} demoUrl={demoUrl} isFavourite={isFavourite} key={i} />
 					})
-					: toggler === 'dev' ? DevData.map(({ img, title, url, demoUrl }, i) => {
-						return <DevPortfolioItem img={img} title={title} url={url} demoUrl={demoUrl} key={i} />
+					: toggler === 'dev' ? DevData.map(({ img, title, url, demoUrl, isFavourite }, i) => {
+						return <DevPortfolioItem img={img} title={title} url={url} demoUrl={demoUrl} isFavourite={isFavourite} key={i} />
 					})
 					: null
 				}

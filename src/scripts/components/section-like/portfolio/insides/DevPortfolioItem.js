@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 
 export default function DevPortfolioItem({...props}) {
     const [isOpen, setIsOpen] = useState(false)
-    const {img, title, url, demoUrl, i} = props
+    const {img, title, url, demoUrl, isFavourite, i} = props
     return (
         <article className='content-wrapper__content-item content-item' key={i}>
             <div className='content-item__img-wrapper'>
@@ -15,6 +15,7 @@ export default function DevPortfolioItem({...props}) {
                 { demoUrl ? <a className='btn btn-primary content-item__cta-btn' href={demoUrl} target='_blank' rel="noopener noreferrer">Демо</a> : null }
             </div>
             {/* <PreviewModal open={isOpen} /> */}
+            { isFavourite && <svg className='content-item__favourite-icon'><use href='#star' /></svg>}
         </article>
     )
 }

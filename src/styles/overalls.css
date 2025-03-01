@@ -692,6 +692,7 @@ a * {
 }
 .portfolio-section .content-item {
   background-color: rgb(44, 44, 108);
+  position: relative;
   padding: 1.3rem;
   border: 1px solid transparent;
   border-radius: 2rem;
@@ -716,6 +717,22 @@ a * {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+.portfolio-section .content-item__favourite-icon {
+  color: #ffbe0d;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.34));
+  opacity: 0.97;
+  transition: 0.4s ease all;
+}
+.portfolio-section .content-item__favourite-icon:hover {
+  opacity: 1;
+  transform: rotate(215deg) scale(1.1);
+  transform-origin: center center;
 }
 .portfolio-section__toggler {
   margin-top: -2rem;
