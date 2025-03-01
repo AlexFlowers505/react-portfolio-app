@@ -32,12 +32,12 @@ export const devPortfolioData = [
         url: 'https://github.com/AlexFlowers505/recipes-react-app',
         demoUrl: 'https://recipes-app-react-505.netlify.app',
     },
-    // {
-    //     img: movieSearchAppPreview,
-    //     title: 'React Movie DataBase App',
-    //     url: 'https://github.com/AlexFlowers505/react-redux-movie-data-base',
-    //     demoUrl: 'https://react-movie-app-505.netlify.app',
-    // },
+    {
+        img: movieSearchAppPreview,
+        title: 'React Movie DataBase App',
+        url: 'https://github.com/AlexFlowers505/react-redux-movie-data-base',
+        demoUrl: 'https://react-movie-app-505.netlify.app',
+    },
     {
         img: tailwindNextJsPortfolioPreview,
         title: 'Next JS & Tailwind Portfolio',
