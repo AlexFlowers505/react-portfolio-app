@@ -19,7 +19,7 @@ export const devPortfolioData = [
     {
         img: investProjectsLandingPreview,
         title: 'Investprojects Landing',
-        url: 'https://github.com/AlexFlowers505/Invest-projects-landing',
+        // url: 'https://github.com/AlexFlowers505/Invest-projects-landing',
         demoUrl: 'https://invest-projects-landing.netlify.app/',
         isFavourite: false,
     },

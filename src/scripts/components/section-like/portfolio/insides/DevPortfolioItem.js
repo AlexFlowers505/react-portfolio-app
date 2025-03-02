@@ -11,8 +11,8 @@ export default function DevPortfolioItem({...props}) {
             </div>
             <h3 className='content-item__heading'>{title}</h3>
             <div className="content-item__cta-wrapper">
-                <a className='btn content-item__cta-btn' href={url} target='_blank' rel="noopener noreferrer">GitHub</a>
-                { demoUrl ? <a className='btn btn-primary content-item__cta-btn' href={demoUrl} target='_blank' rel="noopener noreferrer">Демо</a> : null }
+                { url && <a className='btn content-item__cta-btn' href={url} target='_blank' rel="noopener noreferrer">GitHub</a> }
+                { demoUrl && <a className='btn btn-primary content-item__cta-btn' href={demoUrl} target='_blank' rel="noopener noreferrer">Демо</a> }
             </div>
             {/* <PreviewModal open={isOpen} /> */}
             { isFavourite && <svg className='content-item__favourite-icon'><use href='#star' /></svg>}
