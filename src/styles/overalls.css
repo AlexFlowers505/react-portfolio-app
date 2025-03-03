@@ -621,6 +621,9 @@ a * {
 .xp-section .xp-card .xp-item--git circle {
   stroke-dasharray: 470;
 }
+.xp-section .xp-card .xp-item--tailwind-css circle {
+  stroke-dasharray: 490;
+}
 .xp-section .xp-card .xp-item--js circle {
   stroke-dasharray: 470;
 }
@@ -629,6 +632,9 @@ a * {
 }
 .xp-section .xp-card .xp-item--webpack circle {
   stroke-dasharray: 470;
+}
+.xp-section .xp-card .xp-item--typescript circle {
+  stroke-dasharray: 410;
 }
 .xp-section .xp-card .xp-item__icon {
   margin-top: 6px;
